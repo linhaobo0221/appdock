@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fafaf7" />
+  <meta name="description" content="朝夕体重是一款本地优先的早晚体重记录工具。无需账户，记录不上传，并支持加密 PNG 备份与恢复。"
+    data-i18n-content="meta.description" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AppDock" />
+  <meta property="og:title" content="朝夕体重 — 每天早晚，各记一次" data-i18n-content="meta.title" />
+  <meta property="og:description" content="把晨重、晚重、日内差额和长期趋势放在一条清晰的时间线上。" data-i18n-content="meta.descriptionShort" />
+  <meta property="og:url" content="https://appdock.link/dailyWeight/" />
+  <link rel="canonical" href="https://appdock.link/dailyWeight/" />
+  <link rel="icon" href="./assets/images/app-icon.svg?v=3" type="image/svg+xml" sizes="any" />
+  <link rel="alternate icon" href="./favicon.ico?v=1" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+  <title data-i18n="meta.title">朝夕体重 — 每天早晚，各记一次</title>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../" aria-label="AppDock">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-bars">
+            <i></i><i></i><i></i>
+          </span>
+          <span class="brand-baseline"></span>
+        </span>
+        <span class="brand-word">AppDock</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary" data-i18n-aria-label="a11y.primaryNav">
+        <a class="is-active" href="#product" data-i18n="nav.product">产品</a>
+        <a href="#principles" data-i18n="nav.principles">设计原则</a>
+        <a href="#support" data-i18n="nav.support">支持</a>
+      </nav>
+
+      <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="a11y.language">
+        <button type="button" data-locale="zh-CN" aria-pressed="true">中文</button>
+        <button type="button" data-locale="ja" aria-pressed="false">日本語</button>
+        <button type="button" data-locale="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-offwhite" id="product">
+      <div class="section-inner hero-inner">
+        <div class="hero-copy">
+          <div class="product-lockup">
+            <img class="product-icon" src="./assets/images/app-icon.svg" alt="" width="72" height="72" />
+            <div>
+              <p class="product-name" data-i18n="product.name">朝夕体重</p>
+              <p class="product-name-en">DAILY WEIGHT</p>
+            </div>
+          </div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">PRIVATE WEIGHT JOURNAL</p>
+          <h1 data-i18n="hero.title">每天早晚，各记一次。</h1>
+          <p class="hero-description" data-i18n="hero.description">
+            把晨重、晚重、日内差额和长期趋势放在一条清晰的时间线上。无需账户，也不上传你的体重记录。
+          </p>
+          <ul class="feature-chips" aria-label="Features" data-i18n-aria-label="a11y.features">
+            <li data-i18n="hero.chipMorning">晨重</li>
+            <li data-i18n="hero.chipEvening">晚重</li>
+            <li data-i18n="hero.chipDelta">日内差额</li>
+            <li data-i18n="hero.chipTrend">长期趋势</li>
+          </ul>
+          <div class="hero-actions">
+            <span class="store-button" aria-disabled="true" data-i18n="common.comingSoon">App Store 即将上线</span>
+            <a class="text-link" href="#privacy" data-i18n="hero.privacyLink">查看数据与隐私 →</a>
+          </div>
+          <p class="local-note" data-i18n="hero.localNote">无需注册 · 数据默认只保存在本机</p>
+        </div>
+
+        <figure class="product-stage hero-stage">
+          <span class="stage-index">01</span>
+          <div class="stage-heading">
+            <span data-i18n="hero.stageTitle">一日详情</span>
+            <i></i>
+          </div>
+          <img class="phone-screen" src="./assets/images/day-detail.png?v=3x" width="283" height="614" alt="朝夕体重的一日详情画面"
+            data-i18n-alt="hero.stageAlt" />
+          <figcaption data-i18n="hero.stageCaption">晨重、晚重与当日差额，在同一页完成回看。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rhythm section-white" id="principles">
+      <div class="section-inner rhythm-inner">
+        <div class="section-heading rhythm-heading">
+          <div>
+            <p class="eyebrow" data-i18n="rhythm.eyebrow">CORE RITUAL</p>
+            <h2 data-i18n="rhythm.title">一日两次，信息不过载</h2>
+          </div>
+          <p class="section-intro" data-i18n="rhythm.intro">
+            朝与晚分别记录，让“当天发生了什么”和“下一次醒来发生了什么”拥有不同的含义。
+          </p>
+        </div>
+
+        <div class="rhythm-cards">
+          <article class="record-card morning-card">
+            <div class="card-topline">
+              <span class="time-symbol sun" aria-hidden="true">☼</span>
+              <span class="period-code">AM</span>
+            </div>
+            <p class="card-kicker" data-i18n="rhythm.morningLabel">晨间记录</p>
+            <p class="weight-value">61.8 <small>kg</small></p>
+            <p class="record-meta" data-i18n="rhythm.morningMeta">07:18 · 起床后</p>
+            <div class="card-rule"></div>
+            <p class="card-copy" data-i18n="rhythm.morningCopy">固定条件，让晨重更适合长期比较。</p>
+          </article>
+
+          <article class="record-card evening-card">
+            <div class="card-topline">
+              <span class="time-symbol moon" aria-hidden="true">☾</span>
+              <span class="period-code">PM</span>
+            </div>
+            <p class="card-kicker" data-i18n="rhythm.eveningLabel">晚间记录</p>
+            <p class="weight-value">62.4 <small>kg</small></p>
+            <p class="record-meta" data-i18n="rhythm.eveningMeta">21:36 · 睡前</p>
+            <div class="card-rule"></div>
+            <p class="card-copy" data-i18n="rhythm.eveningCopy">同一天的饮水与作息，会反映在晚重中。</p>
+          </article>
+
+          <article class="record-card summary-card">
+            <p class="card-kicker" data-i18n="rhythm.summaryLabel">把两次记录连起来</p>
+            <dl class="delta-list">
+              <div>
+                <dt data-i18n="rhythm.dayDelta">当天差额</dt>
+                <dd>+0.6 <small>kg</small></dd>
+                <span data-i18n="rhythm.dayDeltaFormula">今晚 − 今晨</span>
+              </div>
+              <div>
+                <dt data-i18n="rhythm.overnightDelta">隔夜变化</dt>
+                <dd>−0.3 <small>kg</small></dd>
+                <span data-i18n="rhythm.overnightFormula">今晨 − 昨晚</span>
+              </div>
+            </dl>
+            <p class="summary-note" data-i18n="rhythm.summaryNote">短期数值仅供观察，长期趋势更重要。</p>
+          </article>
+        </div>
+
+        <div class="rhythm-bottom">
+          <p data-i18n="rhythm.bottomTitle">记录的是节律，不是一次性的数字。</p>
+          <span data-i18n="rhythm.bottomCopy">晨重与晚重分开呈现，减少误读，也让回看更自然。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends section-offwhite">
+      <div class="section-inner trends-inner">
+        <div class="trends-copy">
+          <p class="eyebrow" data-i18n="trends.eyebrow">LONG VIEW</p>
+          <h2 data-i18n="trends.title">把波动放回时间里</h2>
+          <p class="section-intro" data-i18n="trends.intro">
+            单日变化容易受到饮水、盐分和作息影响。周与月的视图，把注意力重新放到更稳定的方向上。
+          </p>
+          <dl class="metrics">
+            <div>
+              <dt data-i18n="trends.weekAverage">周均</dt>
+              <dd>61.9 <small>kg</small></dd>
+            </div>
+            <div>
+              <dt data-i18n="trends.fluctuation">波动</dt>
+              <dd>0.8 <small>kg</small></dd>
+            </div>
+            <div>
+              <dt data-i18n="trends.completion">完成率</dt>
+              <dd>93 <small>%</small></dd>
+            </div>
+          </dl>
+          <div class="insight-card">
+            <span class="insight-mark" aria-hidden="true">↘</span>
+            <div>
+              <p data-i18n="trends.insightTitle">趋势正在缓慢下降</p>
+              <span data-i18n="trends.insightCopy">最近 7 天晨重均值较前一周低 0.4 kg。继续保持相近测量条件，重点看均值。</span>
+            </div>
+          </div>
+          <p class="history-note" data-i18n="trends.historyNote">日历与列表保留每一天，回看时不必依赖记忆。</p>
+        </div>
+
+        <figure class="product-stage trends-stage">
+          <span class="stage-index">02</span>
+          <div class="stage-heading">
+            <span data-i18n="trends.stageTitle">周趋势</span>
+            <i></i>
+          </div>
+          <img class="phone-screen" src="./assets/images/weekly-trend.png?v=3x" width="283" height="614"
+            alt="朝夕体重的周趋势画面" data-i18n-alt="trends.stageAlt" />
+          <figcaption data-i18n="trends.stageCaption">晨重与晚重分开绘制，避免把两个时段混为一谈。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="backup">
+      <div class="section-inner backup-inner">
+        <figure class="backup-stage">
+          <div class="backup-stage-head">
+            <span>ACTUAL BACKUP CARRIER</span>
+            <span>1024 × 1365 PNG</span>
+          </div>
+          <img id="backup-carrier" src="./assets/images/backup-zh-CN.png?v=3x" width="341" height="455"
+            alt="朝夕体重加密备份 PNG" data-i18n-alt="backup.imageAlt" />
+          <figcaption>
+            <strong data-i18n="backup.annotation">这张图片本身就是加密备份容器。</strong>
+            <span data-i18n="backup.rules">可以移动、重命名或作为原始文件传输；不要裁剪、滤镜、截图或压缩。</span>
+          </figcaption>
+        </figure>
+
+        <div class="backup-copy">
+          <p class="eyebrow" data-i18n="backup.eyebrow">ENCRYPTED BACKUP</p>
+          <h2>
+            <span data-i18n="backup.titleLine1">一张图片，</span><br />
+            <span data-i18n="backup.titleLine2">就是你的加密备份</span>
+          </h2>
+          <p class="section-intro" data-i18n="backup.intro">
+            记录与设置在设备上被加密，生成一张可以保存到系统相册的原始 PNG。没有账号，也不依赖我们的服务器。
+          </p>
+          <span class="local-badge">LOCAL ONLY</span>
+          <ol class="backup-steps">
+            <li>
+              <span>01</span>
+              <div><strong data-i18n="backup.step1Title">在本机生成</strong>
+                <p data-i18n="backup.step1Copy">读取记录与设置，不上传。</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong data-i18n="backup.step2Title">使用口令加密</strong>
+                <p data-i18n="backup.step2Copy">口令不保存，也无法代找回。</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong data-i18n="backup.step3Title">保存原始 PNG</strong>
+                <p data-i18n="backup.step3Copy">写入系统相册，保留原图。</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div><strong data-i18n="backup.step4Title">选择图片恢复</strong>
+                <p data-i18n="backup.step4Copy">验证完整性后再覆盖本机数据。</p>
+              </div>
+            </li>
+          </ol>
+          <p class="backup-bottom" data-i18n="backup.bottom">备份与恢复，全程在你的设备上完成。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy" id="privacy">
+      <div class="section-inner privacy-inner">
+        <div class="privacy-copy">
+          <p class="eyebrow" data-i18n="privacy.eyebrow">LOCAL BY DEFAULT</p>
+          <h2>
+            <span data-i18n="privacy.titleLine1">没有账户，</span><br />
+            <span data-i18n="privacy.titleLine2">也没有服务器副本</span>
+          </h2>
+          <p class="section-intro" data-i18n="privacy.intro">
+            朝夕体重是一款离线体重记录工具。你输入的记录与设置默认只保存在设备的 App 沙盒中。
+          </p>
+        </div>
+
+        <ol class="privacy-facts">
+          <li><span>01</span>
+            <div><strong data-i18n="privacy.fact1Title">无需注册</strong>
+              <p data-i18n="privacy.fact1Copy">没有账号体系或远程用户档案。</p>
+            </div>
+          </li>
+          <li><span>02</span>
+            <div><strong data-i18n="privacy.fact2Title">记录不上传</strong>
+              <p data-i18n="privacy.fact2Copy">体重与设置不发送到 AppDock。</p>
+            </div>
+          </li>
+          <li><span>03</span>
+            <div><strong data-i18n="privacy.fact3Title">本地提醒</strong>
+              <p data-i18n="privacy.fact3Copy">由设备按设定时间安排通知。</p>
+            </div>
+          </li>
+          <li><span>04</span>
+            <div><strong data-i18n="privacy.fact4Title">不做追踪</strong>
+              <p data-i18n="privacy.fact4Copy">没有广告、分析或追踪服务。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="data-path" aria-label="Data path" data-i18n-aria-label="privacy.dataPathLabel">
+          <div class="data-path-title">
+            <span>DATA PATH</span>
+            <strong>ON DEVICE</strong>
+            <p data-i18n="privacy.serverNote">不经过 AppDock 服务器</p>
+          </div>
+          <div class="path-node">
+            <strong data-i18n="privacy.inputTitle">晨重 / 晚重</strong>
+            <span data-i18n="privacy.inputCopy">用户主动输入</span>
+          </div>
+          <i class="path-arrow" aria-hidden="true">→</i>
+          <div class="path-node">
+            <strong data-i18n="privacy.databaseTitle">本机数据库</strong>
+            <span data-i18n="privacy.databaseCopy">保存在 App 沙盒</span>
+          </div>
+          <i class="path-arrow" aria-hidden="true">→</i>
+          <div class="path-node">
+            <strong data-i18n="privacy.pngTitle">加密备份 PNG</strong>
+            <span data-i18n="privacy.pngCopy">用户主动保存</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="support">
+      <div class="section-inner closing-inner">
+        <div class="closing-copy">
+          <p class="eyebrow" data-i18n="closing.eyebrow">READY WHEN YOU ARE</p>
+          <h2 data-i18n="closing.title">从今天开始，记录早晚。</h2>
+          <p class="section-intro" data-i18n="closing.intro">少一点输入，多一点清楚。朝夕体重只保留每天真正需要回看的信息。</p>
+        </div>
+        <div class="closing-product">
+          <img src="./assets/images/app-icon.svg" alt="" width="68" height="68" />
+          <div>
+            <strong data-i18n="product.name">朝夕体重</strong>
+            <span>DAILY WEIGHT</span>
+          </div>
+          <span class="store-button" aria-disabled="true" data-i18n="common.comingSoon">App Store 即将上线</span>
+        </div>
+        <ol class="promises">
+          <li><span>01</span>
+            <div><strong data-i18n="closing.promise1Title">每天两次</strong>
+              <p data-i18n="closing.promise1Copy">晨重与晚重分开记录，回看不混淆。</p>
+            </div>
+          </li>
+          <li><span>02</span>
+            <div><strong data-i18n="closing.promise2Title">本地优先</strong>
+              <p data-i18n="closing.promise2Copy">无需账号，记录与设置默认留在设备。</p>
+            </div>
+          </li>
+          <li><span>03</span>
+            <div><strong data-i18n="closing.promise3Title">可以带走</strong>
+              <p data-i18n="closing.promise3Copy">用加密 PNG 备份，并从原图恢复。</p>
+            </div>
+          </li>
+        </ol>
+        <p class="medical-note" data-i18n="closing.medicalNote">
+          朝夕体重不是医疗器械，不提供诊断、治疗或医疗建议；记录与趋势仅供一般参考。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand-dark" href="../" aria-label="AppDock">
+          <span class="brand-mark" aria-hidden="true"><span class="brand-bars"><i></i><i></i><i></i></span><span
+              class="brand-baseline"></span></span>
+          <span class="brand-word">AppDock</span>
+        </a>
+        <p>Small tools, thoughtfully made.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer" data-i18n-aria-label="a11y.footerNav">
+        <a href="#product" data-i18n="product.name">朝夕体重</a>
+        <a href="#privacy" data-i18n="footer.privacy">隐私政策</a>
+        <a href="#support" data-i18n="footer.terms">使用条款</a>
+        <a href="mailto:support@appdock.link" data-i18n="nav.support">支持</a>
+      </nav>
+      <div class="footer-languages" aria-label="Language" data-i18n-aria-label="a11y.language">
+        <button type="button" data-locale="zh-CN">中文</button><span>/</span>
+        <button type="button" data-locale="ja">日本語</button><span>/</span>
+        <button type="button" data-locale="en">EN</button>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AppDock. All rights reserved.</span>
+        <span>appdock.link / dailyWeight</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
