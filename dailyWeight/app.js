@@ -732,6 +732,11 @@
     setupLegalModal();
     applyLocale(detectLocale());
 
+    const requestedLegalDocument = new URLSearchParams(window.location.search).get("legal");
+    if (requestedLegalDocument === "privacy" || requestedLegalDocument === "terms") {
+      openLegalModal(requestedLegalDocument, null);
+    }
+
     document.querySelectorAll("[data-locale]").forEach((button) => {
       button.addEventListener("click", () => applyLocale(button.dataset.locale, true));
     });
