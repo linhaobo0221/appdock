@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "AppDock Inter";
+  font-family: "AppDock.link Inter";
   src: url("./assets/fonts/inter-400.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "AppDock Inter";
+  font-family: "AppDock.link Inter";
   src: url("./assets/fonts/inter-500.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "AppDock Inter";
+  font-family: "AppDock.link Inter";
   src: url("./assets/fonts/inter-600.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "AppDock Inter";
+  font-family: "AppDock.link Inter";
   src: url("./assets/fonts/inter-700.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
@@ -52,7 +52,7 @@
   --footer: #1a1a1a;
   --footer-muted: #a3aba7;
   --footer-rule: #404040;
-  --font-latin: "AppDock Inter", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-latin: "AppDock.link Inter", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-zh: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
   --font-ja: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", YuGothic, "Helvetica Neue", sans-serif;
   --font-body: var(--font-zh);

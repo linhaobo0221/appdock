@@ -1,14 +1,14 @@
-# AppDock
+# AppDock.link
 
 **用心打磨的小应用。**
 
 [English](./README.md) · 简体中文 · [日本語](./README.ja.md)
 
-AppDock 是一个不断扩展的小型应用集合。本仓库包含发布在 [appdock.link](https://appdock.link/) 的静态网站源代码。
+AppDock.link 是一个不断扩展的小型应用集合。本仓库包含发布在 [appdock.link](https://appdock.link/) 的静态网站源代码。
 
-## 关于 AppDock
+## 关于 AppDock.link
 
-AppDock 专注于制作功能克制、隐私友好、长期可用的小型工具。每款应用拥有独立的产品页面与稳定 URL，同时共享一致的品牌和设计原则。
+AppDock.link 专注于制作功能克制、隐私友好、长期可用的小型工具。每款应用拥有独立的产品页面与稳定 URL，同时共享一致的品牌和设计原则。
 
 当前产品：
 
@@ -16,9 +16,9 @@ AppDock 专注于制作功能克制、隐私友好、长期可用的小型工具
 
 ## 仓库结构
 
-- `/index.html`：AppDock 产品入口
+- `/index.html`：AppDock.link 产品入口
 - `/dailyWeight/`：朝夕体重产品介绍页
-- `/assets/`：AppDock 品牌与公共资源
+- `/assets/`：AppDock.link 品牌与公共资源
 - `/CNAME`：GitHub Pages 自定义域名
 - `/.nojekyll`：让 GitHub Pages 按原始静态文件发布
 
@@ -47,12 +47,12 @@ python3 -m http.server 4173
 
 ## 知识产权与使用范围
 
-除另有明确说明外，本仓库中的原创源代码、页面结构、视觉设计、文案、AppDock 品牌元素、图标及产品素材均保留全部权利。
+除另有明确说明外，本仓库中的原创源代码、页面结构、视觉设计、文案、AppDock.link 品牌元素、图标及产品素材均保留全部权利。
 
-公开访问本仓库不代表授予开源许可。除 GitHub 服务条款允许的平台功能、适用法律明确允许的情形，或获得权利人书面授权外，不得复制、修改、再发布、销售、商业使用本项目内容，或基于其制作衍生作品。不得使用 AppDock 的名称、标识或产品素材暗示官方授权、合作或关联关系。
+公开访问本仓库不代表授予开源许可。除 GitHub 服务条款允许的平台功能、适用法律明确允许的情形，或获得权利人书面授权外，不得复制、修改、再发布、销售、商业使用本项目内容，或基于其制作衍生作品。不得使用 AppDock.link 的名称、标识或产品素材暗示官方授权、合作或关联关系。
 
 第三方字体、工具、商标及其他第三方材料仍归各自权利人所有，并适用其原始许可或使用条款。
 
-**Copyright © 2026 AppDock. All rights reserved.**
+**Copyright © 2026 AppDock.link. All rights reserved.**
 
 如需取得使用授权，请联系 [support@appdock.link](mailto:support@appdock.link) 或通过 [GitHub](https://github.com/LinHaobo0221) 联系。

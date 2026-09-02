@@ -1,14 +1,14 @@
-# AppDock
+# AppDock.link
 
 **Small apps, thoughtfully made.**
 
 English · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
-AppDock is the product home for a growing collection of small, focused applications. This repository contains the static website published at [appdock.link](https://appdock.link/).
+AppDock.link is the product home for a growing collection of small, focused applications. This repository contains the static website published at [appdock.link](https://appdock.link/).
 
-## About AppDock
+## About AppDock.link
 
-AppDock is a collection of focused applications built around restraint, privacy, and long-term usefulness. Each app has its own product page and stable URL while sharing a consistent brand and set of design principles.
+AppDock.link is a collection of focused applications built around restraint, privacy, and long-term usefulness. Each app has its own product page and stable URL while sharing a consistent brand and set of design principles.
 
 Current product:
 
@@ -16,9 +16,9 @@ Current product:
 
 ## Repository structure
 
-- `/index.html` — AppDock product index
+- `/index.html` — AppDock.link product index
 - `/dailyWeight/` — Daily Weight product page
-- `/assets/` — AppDock brand and shared assets
+- `/assets/` — AppDock.link brand and shared assets
 - `/CNAME` — GitHub Pages custom domain
 - `/.nojekyll` — serves the static files without Jekyll processing
 
@@ -47,12 +47,12 @@ The website code does not include user accounts, submission forms, advertising, 
 
 ## Intellectual property and permitted use
 
-Unless explicitly stated otherwise, all rights are reserved in the original source code, page structure, visual design, copy, AppDock brand elements, icons, and product assets contained in this repository.
+Unless explicitly stated otherwise, all rights are reserved in the original source code, page structure, visual design, copy, AppDock.link brand elements, icons, and product assets contained in this repository.
 
-Public access to this repository does not grant an open-source license. Except for platform functionality permitted by the GitHub Terms of Service, uses expressly allowed by applicable law, or written authorization from the rights holder, you may not copy, modify, redistribute, sell, commercially use, or create derivative works from this project. You may not use the AppDock name, marks, or product materials in a way that implies official authorization, partnership, or affiliation.
+Public access to this repository does not grant an open-source license. Except for platform functionality permitted by the GitHub Terms of Service, uses expressly allowed by applicable law, or written authorization from the rights holder, you may not copy, modify, redistribute, sell, commercially use, or create derivative works from this project. You may not use the AppDock.link name, marks, or product materials in a way that implies official authorization, partnership, or affiliation.
 
 Third-party fonts, tools, trademarks, and other third-party materials remain the property of their respective owners and are governed by their original licenses or terms.
 
-**Copyright © 2026 AppDock. All rights reserved.**
+**Copyright © 2026 AppDock.link. All rights reserved.**
 
 For permission requests, contact [support@appdock.link](mailto:support@appdock.link) or reach out through [GitHub](https://github.com/LinHaobo0221).

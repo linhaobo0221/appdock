@@ -7,11 +7,11 @@
   const messages = {
     "zh-CN": {
       meta: {
-        description: "AppDock 汇集独立、克制、尊重隐私的小应用。",
+        description: "AppDock.link 汇集独立、克制、尊重隐私的小应用。",
       },
       a11y: { language: "选择语言" },
       hero: {
-        eyebrow: "APPDOCK / 产品",
+        eyebrow: "APPDOCK.LINK / 产品",
         intro: "独立、克制、尊重隐私的小工具。每一款产品都有自己的空间，也共享同一种设计原则。",
       },
       product: {
@@ -23,11 +23,11 @@
     },
     ja: {
       meta: {
-        description: "AppDockは、独立して使え、プライバシーを尊重する小さなアプリを届けます。",
+        description: "AppDock.linkは、独立して使え、プライバシーを尊重する小さなアプリを届けます。",
       },
       a11y: { language: "言語を選択" },
       hero: {
-        eyebrow: "APPDOCK / プロダクト",
+        eyebrow: "APPDOCK.LINK / プロダクト",
         intro: "独立して使え、過不足なく、プライバシーを尊重する小さなツール。それぞれのプロダクトに固有の場所がありながら、同じ設計思想を共有しています。",
       },
       product: {
@@ -39,11 +39,11 @@
     },
     en: {
       meta: {
-        description: "AppDock is home to independent, focused apps that respect your privacy.",
+        description: "AppDock.link is home to independent, focused apps that respect your privacy.",
       },
       a11y: { language: "Choose language" },
       hero: {
-        eyebrow: "APPDOCK / PRODUCTS",
+        eyebrow: "APPDOCK.LINK / PRODUCTS",
         intro: "Independent, focused tools that respect your privacy. Each product has its own space while sharing the same design principles.",
       },
       product: {
