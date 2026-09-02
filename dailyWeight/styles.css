@@ -1311,6 +1311,15 @@ h2 {
   font-size: 11px;
 }
 
+.footer-bottom .footer-contact {
+  color: #aeb6b2;
+  transition: color 160ms ease;
+}
+
+.footer-bottom .footer-contact:hover {
+  color: var(--white);
+}
+
 body.is-modal-open {
   overflow: hidden;
 }

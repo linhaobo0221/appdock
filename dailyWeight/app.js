@@ -130,7 +130,7 @@
         promise3Copy: "用加密 PNG 备份，并从原图恢复。",
         medicalNote: "朝夕体重不是医疗器械，不提供诊断、治疗或医疗建议；记录与趋势仅供一般参考。",
       },
-      footer: { privacy: "隐私政策", terms: "使用条款" },
+      footer: { privacy: "隐私政策", terms: "使用条款", contact: "联系我们：" },
     },
 
     ja: {
@@ -248,7 +248,7 @@
         promise3Copy: "暗号化 PNG にバックアップし、原本画像から復元できます。",
         medicalNote: "朝晩体重は医療機器ではなく、診断・治療・医療上の助言を提供しません。記録とトレンドは一般的な参考情報です。",
       },
-      footer: { privacy: "プライバシーポリシー", terms: "利用規約" },
+      footer: { privacy: "プライバシーポリシー", terms: "利用規約", contact: "お問い合わせ：" },
     },
 
     en: {
@@ -366,7 +366,7 @@
         promise3Copy: "Back up to an encrypted PNG and restore from the original image.",
         medicalNote: "Daily Weight is not a medical device and does not provide diagnosis, treatment, or medical advice. Records and trends are for general reference only.",
       },
-      footer: { privacy: "Privacy Policy", terms: "Terms of Use" },
+      footer: { privacy: "Privacy Policy", terms: "Terms of Use", contact: "Contact: " },
     },
   };
 

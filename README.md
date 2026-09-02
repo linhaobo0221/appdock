@@ -1,26 +1,58 @@
-# AppDock static site
+# AppDock
 
-Static source for [appdock.link](https://appdock.link/). Each product lives in its own folder so future apps can be added without changing existing URLs.
+**Small apps, thoughtfully made.**
 
-## Structure
+English · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
-- `/` — AppDock product index
-- `/dailyWeight/` — Daily Weight / 朝夕体重 / 朝晩体重
-- `CNAME` — GitHub Pages custom domain
-- `.nojekyll` — serve static files as-is
+AppDock is the product home for a growing collection of small, focused applications. This repository contains the static website published at [appdock.link](https://appdock.link/).
+
+## About AppDock
+
+AppDock is a collection of focused applications built around restraint, privacy, and long-term usefulness. Each app has its own product page and stable URL while sharing a consistent brand and set of design principles.
+
+Current product:
+
+- [Daily Weight](https://appdock.link/dailyWeight/): record morning and evening weight separately, review daily changes and long-term trends, and back up or restore locally with an encrypted PNG.
+
+## Repository structure
+
+- `/index.html` — AppDock product index
+- `/dailyWeight/` — Daily Weight product page
+- `/assets/` — AppDock brand and shared assets
+- `/CNAME` — GitHub Pages custom domain
+- `/.nojekyll` — serves the static files without Jekyll processing
+
+Future products should live in independent directories such as `/otherApp/` so existing product URLs remain stable.
 
 ## Local preview
 
-From this directory:
+Run this command from the repository root:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then open `http://127.0.0.1:4173/dailyWeight/`.
+Then open:
 
-## GitHub Pages
+- `http://127.0.0.1:4173/`
+- `http://127.0.0.1:4173/dailyWeight/`
 
-Create a GitHub repository for this folder, push the default branch, and set **Settings → Pages → Build and deployment → Deploy from a branch**. Select the default branch and `/ (root)`.
+## Deployment
 
-The committed `CNAME` maps the site to `appdock.link`. In the DNS provider, add the GitHub Pages records shown by GitHub for the repository, then enable **Enforce HTTPS** after DNS verification succeeds.
+The site is hosted with GitHub Pages. Configure the repository root on the default branch as the Pages source and keep `appdock.link` in `CNAME`. Enable HTTPS after the domain and DNS records have been verified.
+
+## Privacy
+
+The website code does not include user accounts, submission forms, advertising, behavioral tracking, or analytics scripts. Hosting providers, network providers, and browsers may still process access logs or technical information under their own policies.
+
+## Intellectual property and permitted use
+
+Unless explicitly stated otherwise, all rights are reserved in the original source code, page structure, visual design, copy, AppDock brand elements, icons, and product assets contained in this repository.
+
+Public access to this repository does not grant an open-source license. Except for platform functionality permitted by the GitHub Terms of Service, uses expressly allowed by applicable law, or written authorization from the rights holder, you may not copy, modify, redistribute, sell, commercially use, or create derivative works from this project. You may not use the AppDock name, marks, or product materials in a way that implies official authorization, partnership, or affiliation.
+
+Third-party fonts, tools, trademarks, and other third-party materials remain the property of their respective owners and are governed by their original licenses or terms.
+
+**Copyright © 2026 AppDock. All rights reserved.**
+
+For permission requests, contact [support@appdock.link](mailto:support@appdock.link) or reach out through [GitHub](https://github.com/LinHaobo0221).
