@@ -8,6 +8,11 @@
     ja: "./assets/images/backup-ja.png?v=3x",
     en: "./assets/images/backup-en.png?v=3x",
   };
+  const LEGAL_DOCUMENTS = globalThis.DAILY_WEIGHT_LEGAL_DOCUMENTS || {};
+
+  let activeLocale = "en";
+  let activeLegalDocument = "privacy";
+  let lastFocusedElement = null;
 
   const messages = {
     "zh-CN": {
@@ -404,8 +409,147 @@
     }
   };
 
+  const renderLegalDocument = (resetScroll = false) => {
+    const legalCopy = LEGAL_DOCUMENTS[activeLocale];
+    const modal = document.querySelector("#legal-modal");
+    if (!legalCopy || !modal) return;
+
+    const title = modal.querySelector("[data-legal-title]");
+    const closeLabel = modal.querySelector("[data-legal-close-label]");
+    const effectiveDate = modal.querySelector("[data-legal-effective-date]");
+    const sectionsRoot = modal.querySelector("[data-legal-sections]");
+    const panel = modal.querySelector("#legal-document-panel");
+
+    if (title) title.textContent = legalCopy.title;
+    if (closeLabel) closeLabel.textContent = legalCopy.close;
+    if (effectiveDate) effectiveDate.textContent = legalCopy.effectiveDate;
+
+    modal.querySelectorAll("[data-legal-tab]").forEach((tab) => {
+      const documentId = tab.dataset.legalTab;
+      const isSelected = documentId === activeLegalDocument;
+      tab.textContent = documentId === "privacy" ? legalCopy.privacyTab : legalCopy.termsTab;
+      tab.setAttribute("aria-selected", String(isSelected));
+      tab.setAttribute("tabindex", isSelected ? "0" : "-1");
+    });
+
+    if (panel) {
+      panel.setAttribute("aria-labelledby", `legal-tab-${activeLegalDocument}`);
+      if (resetScroll) panel.scrollTop = 0;
+    }
+
+    if (!sectionsRoot) return;
+
+    const fragment = document.createDocumentFragment();
+    legalCopy[activeLegalDocument].forEach((section) => {
+      const sectionElement = document.createElement("section");
+      const heading = document.createElement("h3");
+      const body = document.createElement("p");
+
+      sectionElement.className = "legal-document-section";
+      heading.textContent = section.title;
+      body.textContent = section.body;
+      sectionElement.append(heading, body);
+      fragment.append(sectionElement);
+    });
+    sectionsRoot.replaceChildren(fragment);
+  };
+
+  const selectLegalDocument = (documentId, shouldFocus = false) => {
+    if (documentId !== "privacy" && documentId !== "terms") return;
+    activeLegalDocument = documentId;
+    renderLegalDocument(true);
+
+    if (shouldFocus) {
+      document.querySelector(`[data-legal-tab="${documentId}"]`)?.focus();
+    }
+  };
+
+  const closeLegalModal = () => {
+    const modal = document.querySelector("#legal-modal");
+    if (!modal || modal.hidden) return;
+
+    modal.hidden = true;
+    document.body.classList.remove("is-modal-open");
+    lastFocusedElement?.focus();
+    lastFocusedElement = null;
+  };
+
+  const openLegalModal = (documentId, trigger) => {
+    const modal = document.querySelector("#legal-modal");
+    if (!modal) return;
+
+    lastFocusedElement = trigger;
+    activeLegalDocument = documentId === "terms" ? "terms" : "privacy";
+    modal.hidden = false;
+    document.body.classList.add("is-modal-open");
+    renderLegalDocument(true);
+
+    requestAnimationFrame(() => {
+      modal.querySelector(`[data-legal-tab="${activeLegalDocument}"]`)?.focus();
+    });
+  };
+
+  const setupLegalModal = () => {
+    const modal = document.querySelector("#legal-modal");
+    const dialog = modal?.querySelector(".legal-dialog");
+    if (!modal || !dialog) return;
+
+    document.querySelectorAll("[data-legal-open]").forEach((trigger) => {
+      trigger.addEventListener("click", () => openLegalModal(trigger.dataset.legalOpen, trigger));
+    });
+
+    modal.querySelectorAll("[data-legal-dismiss]").forEach((control) => {
+      control.addEventListener("click", closeLegalModal);
+    });
+
+    modal.querySelectorAll("[data-legal-tab]").forEach((tab) => {
+      tab.addEventListener("click", () => selectLegalDocument(tab.dataset.legalTab));
+      tab.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+
+        event.preventDefault();
+        const tabs = [...modal.querySelectorAll("[data-legal-tab]")];
+        const currentIndex = tabs.indexOf(tab);
+        let nextIndex = event.key === "ArrowLeft" ? currentIndex - 1 : currentIndex + 1;
+        if (event.key === "Home") nextIndex = 0;
+        if (event.key === "End") nextIndex = tabs.length - 1;
+        if (nextIndex < 0) nextIndex = tabs.length - 1;
+        if (nextIndex >= tabs.length) nextIndex = 0;
+        selectLegalDocument(tabs[nextIndex].dataset.legalTab, true);
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (modal.hidden) return;
+
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeLegalModal();
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const focusableElements = [...dialog.querySelectorAll("button, [href], [tabindex]")].filter(
+        (element) => !element.hasAttribute("disabled") && element.getAttribute("tabindex") !== "-1",
+      );
+      if (focusableElements.length === 0) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    });
+  };
+
   const applyLocale = (locale, shouldSave = false) => {
     const nextLocale = SUPPORTED_LOCALES.includes(locale) ? locale : "en";
+    activeLocale = nextLocale;
     document.documentElement.lang = nextLocale;
     document.body.dataset.locale = nextLocale;
 
@@ -438,10 +582,13 @@
     const carrier = document.querySelector("#backup-carrier");
     if (carrier) carrier.setAttribute("src", BACKUP_IMAGES[nextLocale]);
 
+    renderLegalDocument();
+
     if (shouldSave) saveLocale(nextLocale);
   };
 
   document.addEventListener("DOMContentLoaded", () => {
+    setupLegalModal();
     applyLocale(detectLocale());
 
     document.querySelectorAll("[data-locale]").forEach((button) => {

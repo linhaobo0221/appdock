@@ -17,6 +17,7 @@
   <link rel="alternate icon" href="./favicon.ico?v=1" sizes="32x32" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=1" />
   <link rel="stylesheet" href="./styles.css" />
+  <script src="./legal-documents.js" defer></script>
   <script src="./app.js" defer></script>
   <title data-i18n="meta.title">朝夕体重 — 每天早晚，各记一次</title>
 </head>
@@ -357,17 +358,25 @@
   <footer class="site-footer">
     <div class="section-inner footer-inner">
       <div class="footer-brand">
-        <a class="brand brand-dark" href="../" aria-label="AppDock">
-          <span class="brand-mark" aria-hidden="true"><span class="brand-bars"><i></i><i></i><i></i></span><span
-              class="brand-baseline"></span></span>
-          <span class="brand-word">AppDock</span>
-        </a>
-        <p>Small tools, thoughtfully made.</p>
+        <div class="footer-brand-row">
+          <a class="brand brand-dark" href="../" aria-label="AppDock">
+            <span class="brand-mark" aria-hidden="true"><span class="brand-bars"><i></i><i></i><i></i></span><span
+                class="brand-baseline"></span></span>
+            <span class="brand-word">AppDock</span>
+          </a>
+          <a class="footer-github-link" href="https://github.com/LinHaobo0221" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub — LinHaobo0221" title="GitHub — LinHaobo0221">
+            <img src="../assets/social/github-mark.svg" alt="" width="15" height="15" />
+          </a>
+        </div>
+        <p>Small apps, thoughtfully made.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer" data-i18n-aria-label="a11y.footerNav">
         <a href="#product" data-i18n="product.name">朝夕体重</a>
-        <a href="#privacy" data-i18n="footer.privacy">隐私政策</a>
-        <a href="#support" data-i18n="footer.terms">使用条款</a>
+        <button type="button" data-i18n="footer.privacy" data-legal-open="privacy" aria-haspopup="dialog"
+          aria-controls="legal-modal">隐私政策</button>
+        <button type="button" data-i18n="footer.terms" data-legal-open="terms" aria-haspopup="dialog"
+          aria-controls="legal-modal">使用条款</button>
         <a href="mailto:support@appdock.link" data-i18n="nav.support">支持</a>
       </nav>
       <div class="footer-languages" aria-label="Language" data-i18n-aria-label="a11y.language">
@@ -381,6 +390,38 @@
       </div>
     </div>
   </footer>
+
+  <div class="legal-modal" id="legal-modal" hidden>
+    <div class="legal-modal-backdrop" data-legal-dismiss aria-hidden="true"></div>
+    <section class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-dialog-title" tabindex="-1">
+      <header class="legal-dialog-header">
+        <div>
+          <p class="legal-dialog-eyebrow">APPDOCK / DAILY WEIGHT</p>
+          <h2 id="legal-dialog-title" data-legal-title>隐私政策与使用条款</h2>
+        </div>
+        <button class="legal-close-button" type="button" data-legal-dismiss>
+          <span data-legal-close-label>关闭</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" />
+          </svg>
+        </button>
+      </header>
+
+      <div class="legal-tabs" role="tablist">
+        <button id="legal-tab-privacy" type="button" role="tab" data-legal-tab="privacy"
+          aria-controls="legal-document-panel" aria-selected="true" tabindex="0">隐私政策</button>
+        <button id="legal-tab-terms" type="button" role="tab" data-legal-tab="terms"
+          aria-controls="legal-document-panel" aria-selected="false" tabindex="-1">使用条款</button>
+      </div>
+
+      <div class="legal-document-scroll" id="legal-document-panel" role="tabpanel" aria-labelledby="legal-tab-privacy"
+        tabindex="0">
+        <p class="legal-effective-date" data-legal-effective-date>生效日期：2026年9月2日</p>
+        <div class="legal-document-sections" data-legal-sections></div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>

@@ -164,6 +164,35 @@ footer {
   border-top: 1px solid #e5e1db;
 }
 
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-link {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8d4ce;
+  border-radius: 50%;
+  background: #fff;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.github-link img {
+  width: 16px;
+  height: 16px;
+}
+
+.github-link:hover {
+  border-color: #8b847d;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 600px) {
   main { padding: 82px 0 80px; }
   .intro { margin-bottom: 48px; }
@@ -171,5 +200,5 @@ footer {
   .product-card img { width: 58px; height: 58px; border-radius: 14px; }
   .product-card strong { font-size: 20px; }
   .arrow { display: none; }
-  footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 5px; }
+  footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 12px; }
 }
