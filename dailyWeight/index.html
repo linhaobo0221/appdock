@@ -65,19 +65,30 @@
           <p class="eyebrow" data-i18n="hero.eyebrow">PRIVATE WEIGHT JOURNAL</p>
           <h1 data-i18n="hero.title">每天早晚，各记一次。</h1>
           <p class="hero-description" data-i18n="hero.description">
-            把晨重、晚重、日内差额和长期趋势放在一条清晰的时间线上。无需账户，也不上传你的体重记录。
+            每天只记录晨重和晚重，就能看清日内差额、隔夜变化与长期趋势。
           </p>
-          <ul class="feature-chips" aria-label="Features" data-i18n-aria-label="a11y.features">
-            <li data-i18n="hero.chipMorning">晨重</li>
-            <li data-i18n="hero.chipEvening">晚重</li>
-            <li data-i18n="hero.chipDelta">日内差额</li>
-            <li data-i18n="hero.chipTrend">长期趋势</li>
-          </ul>
+          <div class="hero-transfer">
+            <div class="hero-transfer-preview" aria-hidden="true">
+              <span class="hero-preview-brand">
+                <img src="./assets/images/app-icon.svg" width="24" height="24" alt="" />
+              </span>
+              <span class="hero-preview-accent"></span>
+              <span class="hero-preview-line hero-preview-line-long"></span>
+              <span class="hero-preview-line hero-preview-line-short"></span>
+            </div>
+            <div>
+              <p class="hero-transfer-kicker" data-i18n="hero.transferKicker">ONE IMAGE · EVERY DEVICE</p>
+              <strong data-i18n="hero.transferTitle">一张图片，就能跨设备共享全部数据。</strong>
+              <p data-i18n="hero.transferCopy">
+                直接传输原始加密 PNG，就能在另一台设备恢复全部记录。无需账号、无需上传，也不依赖 AppDock 或任何第三方云服务。
+              </p>
+            </div>
+          </div>
           <div class="hero-actions">
             <span class="store-button" aria-disabled="true" data-i18n="common.comingSoon">App Store 即将上线</span>
             <a class="text-link" href="#privacy" data-i18n="hero.privacyLink">查看数据与隐私 →</a>
           </div>
-          <p class="local-note" data-i18n="hero.localNote">无需注册 · 数据默认只保存在本机</p>
+          <p class="local-note" data-i18n="hero.localNote">记录留在设备 · 迁移也由你掌控</p>
         </div>
 
         <figure class="product-stage hero-stage">
@@ -207,7 +218,7 @@
             <span>ACTUAL BACKUP CARRIER</span>
             <span>1024 × 1365 PNG</span>
           </div>
-          <img id="backup-carrier" src="./assets/images/backup-zh-CN.png?v=3x" width="341" height="455"
+          <img id="backup-carrier" data-backup-image src="./assets/images/backup-zh-CN.png?v=3x" width="341" height="455"
             alt="朝夕体重加密备份 PNG" data-i18n-alt="backup.imageAlt" />
           <figcaption>
             <strong data-i18n="backup.annotation">这张图片本身就是加密备份容器。</strong>
@@ -251,7 +262,12 @@
               </div>
             </li>
           </ol>
-          <p class="backup-bottom" data-i18n="backup.bottom">备份与恢复，全程在你的设备上完成。</p>
+          <div class="backup-bottom">
+            <strong data-i18n="backup.transferTitle">无需上传，也能跨设备迁移。</strong>
+            <p data-i18n="backup.transferCopy">
+              将加密备份 PNG 通过 AirDrop 或数据线直接传到另一台设备，选择图片并输入口令，即可恢复全部记录。全程无需账号、无需云端，数据不经过 AppDock 或任何第三方服务器，始终由你自己保管。
+            </p>
+          </div>
         </div>
       </div>
     </section>

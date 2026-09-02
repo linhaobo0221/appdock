@@ -18,7 +18,7 @@
     "zh-CN": {
       meta: {
         title: "朝夕体重 — 每天早晚，各记一次",
-        description: "朝夕体重是一款本地优先的早晚体重记录工具。无需账户，记录不上传，并支持加密 PNG 备份与恢复。",
+        description: "朝夕体重每天只记录晨重和晚重。一张加密 PNG 就能备份并跨设备共享全部数据，无需账户、上传或云端服务。",
         descriptionShort: "把晨重、晚重、日内差额和长期趋势放在一条清晰的时间线上。",
       },
       a11y: {
@@ -34,13 +34,12 @@
       hero: {
         eyebrow: "PRIVATE WEIGHT JOURNAL",
         title: "每天早晚，各记一次。",
-        description: "把晨重、晚重、日内差额和长期趋势放在一条清晰的时间线上。无需账户，也不上传你的体重记录。",
-        chipMorning: "晨重",
-        chipEvening: "晚重",
-        chipDelta: "日内差额",
-        chipTrend: "长期趋势",
+        description: "每天只记录晨重和晚重，就能看清日内差额、隔夜变化与长期趋势。",
+        transferKicker: "ONE IMAGE · EVERY DEVICE",
+        transferTitle: "一张图片，就能跨设备共享全部数据。",
+        transferCopy: "直接传输原始加密 PNG，就能在另一台设备恢复全部记录。无需账号、无需上传，也不依赖 AppDock 或任何第三方云服务。",
         privacyLink: "查看数据与隐私 →",
-        localNote: "无需注册 · 数据默认只保存在本机",
+        localNote: "记录留在设备 · 迁移也由你掌控",
         stageTitle: "一日详情",
         stageAlt: "朝夕体重的一日详情画面",
         stageCaption: "晨重、晚重与当日差额，在同一页完成回看。",
@@ -94,7 +93,8 @@
         step3Copy: "写入系统相册，保留原图。",
         step4Title: "选择图片恢复",
         step4Copy: "验证完整性后再覆盖本机数据。",
-        bottom: "备份与恢复，全程在你的设备上完成。",
+        transferTitle: "无需上传，也能跨设备迁移。",
+        transferCopy: "将加密备份 PNG 通过 AirDrop 或数据线直接传到另一台设备，选择图片并输入口令，即可恢复全部记录。全程无需账号、无需云端，数据不经过 AppDock 或任何第三方服务器，始终由你自己保管。",
       },
       privacy: {
         eyebrow: "LOCAL BY DEFAULT",
@@ -136,7 +136,7 @@
     ja: {
       meta: {
         title: "朝晩体重 — 朝と夜、1日2回だけ",
-        description: "朝晩体重は、端末内で完結する朝・夜の体重記録アプリです。アカウント不要、記録はアップロードされず、暗号化 PNG でバックアップと復元ができます。",
+        description: "朝晩体重は、朝と夜の体重だけを記録します。1枚の暗号化 PNG で全データをバックアップし、別の端末へ移せます。アカウントもアップロードもクラウドも不要です。",
         descriptionShort: "朝の体重、夜の体重、日内差、長期トレンドを一本の見やすいタイムラインに。",
       },
       a11y: {
@@ -152,13 +152,12 @@
       hero: {
         eyebrow: "PRIVATE WEIGHT JOURNAL",
         title: "朝と夜、1日2回だけ。",
-        description: "朝の体重、夜の体重、日内差、長期トレンドを一本の見やすいタイムラインに。アカウントは不要で、体重記録をアップロードすることもありません。",
-        chipMorning: "朝の体重",
-        chipEvening: "夜の体重",
-        chipDelta: "日内差",
-        chipTrend: "長期トレンド",
+        description: "毎日記録するのは朝と夜の体重だけ。日内差、一晩の変化、長期トレンドまで見渡せます。",
+        transferKicker: "ONE IMAGE · EVERY DEVICE",
+        transferTitle: "1枚の画像だけで、全データを別の端末へ。",
+        transferCopy: "暗号化されたオリジナル PNG を直接転送すれば、別の端末ですべての記録を復元できます。アカウントもアップロードも不要。AppDock や第三者のクラウドサービスにも依存しません。",
         privacyLink: "データとプライバシーを見る →",
-        localNote: "登録不要 · データは初期設定で端末内のみに保存",
+        localNote: "記録は端末に · 移行もあなたの手で",
         stageTitle: "1日の詳細",
         stageAlt: "朝晩体重の1日詳細画面",
         stageCaption: "朝の体重、夜の体重、その日の差を1画面で振り返れます。",
@@ -212,7 +211,8 @@
         step3Copy: "写真ライブラリへ、原本のまま保存します。",
         step4Title: "画像を選んで復元",
         step4Copy: "完全性を確認してから端末内データを置き換えます。",
-        bottom: "バックアップも復元も、すべてあなたの端末内で完結します。",
+        transferTitle: "アップロードせずに、別の端末へ移行できます。",
+        transferCopy: "暗号化バックアップ PNG を AirDrop またはケーブルで別の端末へ直接転送し、画像を選んでパスワードを入力すれば、すべての記録を復元できます。アカウントもクラウドも不要。データは AppDock や第三者のサーバーを経由せず、常にあなた自身が管理します。",
       },
       privacy: {
         eyebrow: "LOCAL BY DEFAULT",
@@ -254,7 +254,7 @@
     en: {
       meta: {
         title: "Daily Weight — Once in the morning, once at night",
-        description: "Daily Weight is a local-first journal for morning and evening weigh-ins. No account, no record uploads, with encrypted PNG backup and restore.",
+        description: "Daily Weight records only morning and evening weigh-ins. One encrypted PNG backs up and moves all your data between devices—no account, upload, or cloud service required.",
         descriptionShort: "Morning weight, evening weight, daily change, and long-term trends in one clear timeline.",
       },
       a11y: {
@@ -270,13 +270,12 @@
       hero: {
         eyebrow: "PRIVATE WEIGHT JOURNAL",
         title: "Once in the morning. Once at night.",
-        description: "See morning weight, evening weight, daily change, and long-term trends on one clear timeline. No account required, and your weight records are never uploaded.",
-        chipMorning: "Morning",
-        chipEvening: "Evening",
-        chipDelta: "Daily change",
-        chipTrend: "Long-term trends",
+        description: "Record only morning and evening weight each day to see daily change, overnight movement, and long-term trends.",
+        transferKicker: "ONE IMAGE · EVERY DEVICE",
+        transferTitle: "One image moves all your data between devices.",
+        transferCopy: "Transfer the original encrypted PNG directly and restore every record on another device. No account. No upload. No dependency on AppDock or any third-party cloud service.",
         privacyLink: "View data & privacy →",
-        localNote: "No registration · Data stays on your device by default",
+        localNote: "Records stay local · You control every move",
         stageTitle: "Day detail",
         stageAlt: "Daily Weight day detail screen",
         stageCaption: "Review morning, evening, and the day’s change in one place.",
@@ -330,7 +329,8 @@
         step3Copy: "Writes to Photos while preserving the original file.",
         step4Title: "Choose an image to restore",
         step4Copy: "Checks integrity before replacing local data.",
-        bottom: "Backup and restore happen entirely on your device.",
+        transferTitle: "Move between devices without uploading.",
+        transferCopy: "Transfer the encrypted backup PNG directly to another device with AirDrop or a cable, then choose the image and enter your passphrase to restore every record. No account or cloud required. Your data never passes through AppDock or any third-party server and remains in your control.",
       },
       privacy: {
         eyebrow: "LOCAL BY DEFAULT",
@@ -579,8 +579,9 @@
       if (button.closest(".language-switcher")) button.setAttribute("aria-pressed", String(active));
     });
 
-    const carrier = document.querySelector("#backup-carrier");
-    if (carrier) carrier.setAttribute("src", BACKUP_IMAGES[nextLocale]);
+    document.querySelectorAll("[data-backup-image]").forEach((image) => {
+      image.setAttribute("src", BACKUP_IMAGES[nextLocale]);
+    });
 
     renderLegalDocument();
 
