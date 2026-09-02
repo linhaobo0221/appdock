@@ -44,9 +44,9 @@
       </nav>
 
       <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="a11y.language">
-        <button type="button" data-locale="zh-CN" aria-pressed="true">中文</button>
-        <button type="button" data-locale="ja" aria-pressed="false">日本語</button>
-        <button type="button" data-locale="en" aria-pressed="false">EN</button>
+        <button type="button" data-locale="zh-CN" lang="zh-CN" aria-pressed="true">中文</button>
+        <button type="button" data-locale="ja" lang="ja" aria-pressed="false">日本語</button>
+        <button type="button" data-locale="en" lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
   </header>
@@ -59,10 +59,10 @@
             <img class="product-icon" src="./assets/images/app-icon.svg" alt="" width="72" height="72" />
             <div>
               <p class="product-name" data-i18n="product.name">朝夕体重</p>
-              <p class="product-name-en">DAILY WEIGHT</p>
+              <p class="product-name-en" lang="en">DAILY WEIGHT</p>
             </div>
           </div>
-          <p class="eyebrow" data-i18n="hero.eyebrow">PRIVATE WEIGHT JOURNAL</p>
+          <p class="eyebrow" lang="en" data-i18n="hero.eyebrow">PRIVATE WEIGHT JOURNAL</p>
           <h1 data-i18n="hero.title">每天早晚，各记一次。</h1>
           <p class="hero-description" data-i18n="hero.description">
             每天只记录晨重和晚重，就能看清日内差额、隔夜变化与长期趋势。
@@ -77,7 +77,7 @@
               <span class="hero-preview-line hero-preview-line-short"></span>
             </div>
             <div>
-              <p class="hero-transfer-kicker" data-i18n="hero.transferKicker">ONE IMAGE · EVERY DEVICE</p>
+              <p class="hero-transfer-kicker" lang="en" data-i18n="hero.transferKicker">ONE IMAGE · EVERY DEVICE</p>
               <strong data-i18n="hero.transferTitle">一张图片，就能跨设备共享全部数据。</strong>
               <p data-i18n="hero.transferCopy">
                 直接传输原始加密 PNG，就能在另一台设备恢复全部记录。无需账号、无需上传，也不依赖 AppDock 或任何第三方云服务。
@@ -97,8 +97,72 @@
             <span data-i18n="hero.stageTitle">一日详情</span>
             <i></i>
           </div>
-          <img class="phone-screen" src="./assets/images/day-detail.png?v=3x" width="283" height="614" alt="朝夕体重的一日详情画面"
-            data-i18n-alt="hero.stageAlt" />
+          <div class="phone-screen app-screen-mockup day-detail-screen" role="img" aria-label="朝夕体重的一日详情画面"
+            data-i18n-aria-label="hero.stageAlt">
+            <div class="app-screen-visual" aria-hidden="true">
+            <div class="mock-status-bar">
+              <span>9:41</span>
+              <span class="mock-status-network"><span>5G</span><i aria-hidden="true"></i><span>100%</span></span>
+            </div>
+
+            <div class="day-screen-header">
+              <span class="day-back" aria-hidden="true"></span>
+              <strong data-i18n="screens.day.date">8月29日记录</strong>
+            </div>
+
+            <div class="day-delta-card">
+              <div class="day-delta-grid">
+                <div class="day-delta-tile day-delta-tile-day">
+                  <span class="day-delta-label"><i aria-hidden="true"></i><span data-i18n="screens.day.dayDelta">当日差额</span></span>
+                  <strong>+0.6 kg</strong>
+                  <span class="day-delta-formula" data-i18n="screens.day.dayDeltaFormula">今晚 − 今晨</span>
+                </div>
+                <div class="day-delta-tile day-delta-tile-night">
+                  <span class="day-delta-label"><i aria-hidden="true"></i><span data-i18n="screens.day.overnightDelta">隔夜变化</span></span>
+                  <strong>−0.3 kg</strong>
+                  <span class="day-delta-formula" data-i18n="screens.day.overnightFormula">今晨 − 昨晚</span>
+                </div>
+              </div>
+              <p data-i18n="screens.day.overnightNote">隔夜变化受饮水、盐分与睡眠影响，仅作参考</p>
+            </div>
+
+            <div class="day-entry-card day-entry-morning">
+              <span class="day-entry-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"></circle><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path></svg>
+              </span>
+              <div class="day-entry-heading">
+                <strong data-i18n="screens.day.morningTitle">晨间体重</strong>
+                <span data-i18n="screens.day.morningMeta">07:18 · 已记录</span>
+              </div>
+              <b>61.8 kg</b>
+              <p data-i18n="screens.day.morningHint">精度 0.1 kg · 可稍后编辑</p>
+            </div>
+
+            <div class="day-entry-card day-entry-evening">
+              <span class="day-entry-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17.8 15.8A7.3 7.3 0 0 1 8.2 6.2a7.4 7.4 0 1 0 9.6 9.6Z"></path></svg>
+              </span>
+              <div class="day-entry-heading">
+                <strong data-i18n="screens.day.eveningTitle">晚间体重</strong>
+                <span data-i18n="screens.day.eveningMeta">21:36 · 已记录</span>
+              </div>
+              <b>62.4 kg</b>
+              <p data-i18n="screens.day.eveningHint">保存后立即计算今日差额</p>
+            </div>
+
+            <div class="day-notes-card">
+              <strong data-i18n="screens.day.notesTitle">当日备注</strong>
+              <p><span data-i18n="screens.day.notesCopy">睡眠 7 小时 · 正常饮食 · 无特殊情况</span><i aria-hidden="true">›</i></p>
+            </div>
+
+            <div class="day-edit-actions">
+              <span data-i18n="screens.day.editMorning">编辑晨重</span>
+              <span data-i18n="screens.day.editEvening">编辑晚重</span>
+            </div>
+            <span class="day-delete" data-i18n="screens.day.delete">删除当天记录</span>
+            <i class="mock-home-indicator" aria-hidden="true"></i>
+            </div>
+          </div>
           <figcaption data-i18n="hero.stageCaption">晨重、晚重与当日差额，在同一页完成回看。</figcaption>
         </figure>
       </div>
@@ -108,7 +172,7 @@
       <div class="section-inner rhythm-inner">
         <div class="section-heading rhythm-heading">
           <div>
-            <p class="eyebrow" data-i18n="rhythm.eyebrow">CORE RITUAL</p>
+            <p class="eyebrow" lang="en" data-i18n="rhythm.eyebrow">CORE RITUAL</p>
             <h2 data-i18n="rhythm.title">一日两次，信息不过载</h2>
           </div>
           <p class="section-intro" data-i18n="rhythm.intro">
@@ -169,7 +233,7 @@
     <section class="trends section-offwhite">
       <div class="section-inner trends-inner">
         <div class="trends-copy">
-          <p class="eyebrow" data-i18n="trends.eyebrow">LONG VIEW</p>
+          <p class="eyebrow" lang="en" data-i18n="trends.eyebrow">LONG VIEW</p>
           <h2 data-i18n="trends.title">把波动放回时间里</h2>
           <p class="section-intro" data-i18n="trends.intro">
             单日变化容易受到饮水、盐分和作息影响。周与月的视图，把注意力重新放到更稳定的方向上。
@@ -204,8 +268,79 @@
             <span data-i18n="trends.stageTitle">周趋势</span>
             <i></i>
           </div>
-          <img class="phone-screen" src="./assets/images/weekly-trend.png?v=4x" width="283" height="614"
-            alt="朝夕体重的周趋势画面" data-i18n-alt="trends.stageAlt" />
+          <div class="phone-screen app-screen-mockup weekly-trend-screen" role="img" aria-label="朝夕体重的周趋势画面"
+            data-i18n-aria-label="trends.stageAlt">
+            <div class="app-screen-visual" aria-hidden="true">
+            <div class="mock-status-bar">
+              <span>9:41</span>
+              <span class="mock-status-network"><span>5G</span><i aria-hidden="true"></i><span>100%</span></span>
+            </div>
+
+            <div class="trend-screen-header">
+              <strong data-i18n="screens.trend.title">趋势</strong>
+              <span data-i18n="screens.trend.goal">目标 58.0 kg</span>
+            </div>
+
+            <div class="trend-period-tabs">
+              <span class="is-active" data-i18n="screens.trend.week">周</span>
+              <span data-i18n="screens.trend.month">月</span>
+            </div>
+
+            <div class="trend-chart-card">
+              <div class="trend-chart-heading">
+                <strong data-i18n="screens.trend.dateRange">8月24日 – 8月30日</strong>
+                <span data-i18n="screens.trend.comparison">周均 −0.4 kg</span>
+              </div>
+              <div class="trend-chart-plot" aria-hidden="true">
+                <span class="trend-axis trend-axis-63">63</span>
+                <span class="trend-axis trend-axis-62">62</span>
+                <span class="trend-axis trend-axis-61">61</span>
+                <svg viewBox="0 0 196 94" preserveAspectRatio="none">
+                  <path class="trend-grid-line" d="M0 8H196M0 43H196M0 78H196"></path>
+                  <path class="trend-goal-line" d="M0 92H196"></path>
+                  <path class="trend-evening-line" d="M0 58C11 54 20 45 30 47C40 49 45 42 57 38C69 34 72 39 82 35C92 31 92 24 103 27C114 30 120 21 133 22C146 23 151 13 164 14C176 15 182 6 196 8"></path>
+                  <path class="trend-morning-line" d="M0 65C10 62 19 53 29 54C40 56 45 51 57 44C70 37 76 41 87 45C99 49 105 47 116 38C127 29 132 31 144 33C156 35 162 24 174 21C185 18 190 18 196 14"></path>
+                </svg>
+              </div>
+              <div class="trend-chart-legend">
+                <span><i class="is-morning" aria-hidden="true"></i><span data-i18n="screens.trend.morning">晨重</span></span>
+                <span><i class="is-evening" aria-hidden="true"></i><span data-i18n="screens.trend.evening">晚重</span></span>
+                <span data-i18n="screens.trend.logged">13 / 14 次记录</span>
+              </div>
+            </div>
+
+            <div class="trend-metric-grid">
+              <div><span data-i18n="screens.trend.average">周均</span><strong class="is-green">61.9 <small>kg</small></strong></div>
+              <div><span data-i18n="screens.trend.range">波动</span><strong>0.8 <small>kg</small></strong></div>
+              <div><span data-i18n="screens.trend.completion">完成率</span><strong class="is-green">93%</strong></div>
+            </div>
+
+            <div class="trend-insight">
+              <strong data-i18n="screens.trend.insightTitle">趋势正在缓慢下降</strong>
+              <p data-i18n="screens.trend.insightCopy">最近 7 天晨重均值较前一周低 0.4 kg。继续保持相近测量条件，重点看均值。</p>
+            </div>
+
+            <div class="trend-bottom-nav">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 10.5 12 3l8.5 7.5v9.7h-5.7v-6h-5.6v6H3.5Z"></path></svg>
+                <i data-i18n="screens.trend.today">今天</i>
+              </span>
+              <span class="is-active">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 17 5-5 3.3 3.2 7.7-8"></path><path d="M15.5 7h4v4"></path></svg>
+                <i data-i18n="screens.trend.trends">趋势</i>
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="15" rx="2"></rect><path d="M8 3v5M16 3v5M4 10h16"></path></svg>
+                <i data-i18n="screens.trend.history">历史</i>
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.7 2.8h4.6l.7 2.3 2.1.9 2.1-1.1 3.2 3.2-1.1 2.1.9 2.1 2.3.7v4.6l-2.3.7-.9 2.1 1.1 2.1-3.2 3.2-2.1-1.1-2.1.9-.7 2.3H9.7L9 22.2l-2.1-.9-2.1 1.1-3.2-3.2 1.1-2.1-.9-2.1-2.3-.7V9.7L1.8 9l.9-2.1-1.1-2.1 3.2-3.2 2.1 1.1 2.1-.9Z"></path><circle cx="12" cy="12" r="3.2"></circle></svg>
+                <i data-i18n="screens.trend.settings">设置</i>
+              </span>
+            </div>
+            <i class="mock-home-indicator" aria-hidden="true"></i>
+            </div>
+          </div>
           <figcaption data-i18n="trends.stageCaption">晨重与晚重分开绘制，避免把两个时段混为一谈。</figcaption>
         </figure>
       </div>
@@ -215,7 +350,7 @@
       <div class="section-inner backup-inner">
         <figure class="backup-stage">
           <div class="backup-stage-head">
-            <span>ACTUAL BACKUP CARRIER</span>
+            <span data-i18n="backup.carrierLabel">ACTUAL BACKUP CARRIER</span>
             <span>1024 × 1365 PNG</span>
           </div>
           <img id="backup-carrier" data-backup-image src="./assets/images/backup-zh-CN.png?v=3x" width="341" height="455"
@@ -227,7 +362,7 @@
         </figure>
 
         <div class="backup-copy">
-          <p class="eyebrow" data-i18n="backup.eyebrow">ENCRYPTED BACKUP</p>
+          <p class="eyebrow" lang="en" data-i18n="backup.eyebrow">ENCRYPTED BACKUP</p>
           <h2>
             <span data-i18n="backup.titleLine1">一张图片，</span><br />
             <span data-i18n="backup.titleLine2">就是你的加密备份</span>
@@ -235,7 +370,7 @@
           <p class="section-intro" data-i18n="backup.intro">
             记录与设置在设备上被加密，生成一张可以保存到系统相册的原始 PNG。没有账号，也不依赖我们的服务器。
           </p>
-          <span class="local-badge">LOCAL ONLY</span>
+          <span class="local-badge" data-i18n="backup.localBadge">LOCAL ONLY</span>
           <ol class="backup-steps">
             <li>
               <span>01</span>
@@ -275,7 +410,7 @@
     <section class="privacy" id="privacy">
       <div class="section-inner privacy-inner">
         <div class="privacy-copy">
-          <p class="eyebrow" data-i18n="privacy.eyebrow">LOCAL BY DEFAULT</p>
+          <p class="eyebrow" lang="en" data-i18n="privacy.eyebrow">LOCAL BY DEFAULT</p>
           <h2>
             <span data-i18n="privacy.titleLine1">没有账户，</span><br />
             <span data-i18n="privacy.titleLine2">也没有服务器副本</span>
@@ -310,8 +445,8 @@
 
         <div class="data-path" aria-label="Data path" data-i18n-aria-label="privacy.dataPathLabel">
           <div class="data-path-title">
-            <span>DATA PATH</span>
-            <strong>ON DEVICE</strong>
+            <span data-i18n="privacy.dataPathKicker">DATA PATH</span>
+            <strong data-i18n="privacy.onDeviceLabel">ON DEVICE</strong>
             <p data-i18n="privacy.serverNote">不经过 AppDock.link 服务器</p>
           </div>
           <div class="path-node">
@@ -335,7 +470,7 @@
     <section class="closing" id="support">
       <div class="section-inner closing-inner">
         <div class="closing-copy">
-          <p class="eyebrow" data-i18n="closing.eyebrow">READY WHEN YOU ARE</p>
+          <p class="eyebrow" lang="en" data-i18n="closing.eyebrow">READY WHEN YOU ARE</p>
           <h2 data-i18n="closing.title">从今天开始，记录早晚。</h2>
           <p class="section-intro" data-i18n="closing.intro">少一点输入，多一点清楚。朝夕体重只保留每天真正需要回看的信息。</p>
         </div>
@@ -343,7 +478,7 @@
           <img src="./assets/images/app-icon.svg" alt="" width="68" height="68" />
           <div>
             <strong data-i18n="product.name">朝夕体重</strong>
-            <span>DAILY WEIGHT</span>
+            <span lang="en">DAILY WEIGHT</span>
           </div>
           <span class="store-button" aria-disabled="true" data-i18n="common.comingSoon">App Store 即将上线</span>
         </div>
@@ -385,7 +520,7 @@
             <img src="../assets/social/github-mark.svg" alt="" width="15" height="15" />
           </a>
         </div>
-        <p>Small apps, thoughtfully made.</p>
+        <p data-i18n="brand.tagline">Small apps, thoughtfully made.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer" data-i18n-aria-label="a11y.footerNav">
         <a href="#product" data-i18n="product.name">朝夕体重</a>
@@ -395,10 +530,10 @@
           aria-controls="legal-modal">使用条款</button>
         <a href="mailto:support@appdock.link" data-i18n="nav.support">支持</a>
       </nav>
-      <div class="footer-languages" aria-label="Language" data-i18n-aria-label="a11y.language">
-        <button type="button" data-locale="zh-CN">中文</button><span>/</span>
-        <button type="button" data-locale="ja">日本語</button><span>/</span>
-        <button type="button" data-locale="en">EN</button>
+      <div class="footer-languages" role="group" aria-label="Language" data-i18n-aria-label="a11y.language">
+        <button type="button" data-locale="zh-CN" lang="zh-CN" aria-pressed="true">中文</button><span>/</span>
+        <button type="button" data-locale="ja" lang="ja" aria-pressed="false">日本語</button><span>/</span>
+        <button type="button" data-locale="en" lang="en" aria-pressed="false">EN</button>
       </div>
       <div class="footer-bottom">
         <span>© 2026 AppDock.link. All rights reserved.</span>
@@ -414,10 +549,10 @@
     <section class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-dialog-title" tabindex="-1">
       <header class="legal-dialog-header">
         <div>
-          <p class="legal-dialog-eyebrow">APPDOCK.LINK / DAILY WEIGHT</p>
+          <p class="legal-dialog-eyebrow" lang="en">APPDOCK.LINK / DAILY WEIGHT</p>
           <h2 id="legal-dialog-title" data-legal-title>隐私政策与使用条款</h2>
         </div>
-        <button class="legal-close-button" type="button" data-legal-dismiss>
+        <button class="legal-close-button" type="button" data-legal-dismiss data-legal-close-button aria-label="关闭">
           <span data-legal-close-label>关闭</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5"

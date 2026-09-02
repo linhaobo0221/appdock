@@ -7,11 +7,14 @@
   const messages = {
     "zh-CN": {
       meta: {
+        title: "AppDock.link — Small apps, thoughtfully made.",
         description: "AppDock.link 汇集独立、克制、尊重隐私的小应用。",
       },
       a11y: { language: "选择语言" },
       hero: {
         eyebrow: "APPDOCK.LINK / 产品",
+        titleLine1: "Small apps,",
+        titleLine2: "thoughtfully made.",
         intro: "独立、克制、尊重隐私的小工具。每一款产品都有自己的空间，也共享同一种设计原则。",
       },
       product: {
@@ -23,33 +26,39 @@
     },
     ja: {
       meta: {
-        description: "AppDock.linkは、独立して使え、プライバシーを尊重する小さなアプリを届けます。",
+        title: "AppDock.link — 小さなアプリを、ていねいに。",
+        description: "AppDock.linkは、それぞれ独立して使える、シンプルでプライバシーに配慮した小さなアプリを届けます。",
       },
       a11y: { language: "言語を選択" },
       hero: {
         eyebrow: "APPDOCK.LINK / プロダクト",
-        intro: "独立して使え、過不足なく、プライバシーを尊重する小さなツール。それぞれのプロダクトに固有の場所がありながら、同じ設計思想を共有しています。",
+        titleLine1: "Small apps,",
+        titleLine2: "thoughtfully made.",
+        intro: "機能を絞り、プライバシーに配慮した小さなツール。それぞれが独立しながら、共通の設計思想でつくられています。",
       },
       product: {
-        category: "01 / ヘルスケア＆フィットネス",
+        category: "01 / ヘルスケア／フィットネス",
         name: "朝晩体重",
-        description: "朝と夜、1日2回だけ。",
+        description: "朝と夜に、1回ずつ。",
       },
       footer: { contact: "お問い合わせ：" },
     },
     en: {
       meta: {
-        description: "AppDock.link is home to independent, focused apps that respect your privacy.",
+        title: "AppDock.link — Small apps, thoughtfully made.",
+        description: "AppDock.link is home to small, focused apps that stand on their own and respect your privacy.",
       },
       a11y: { language: "Choose language" },
       hero: {
         eyebrow: "APPDOCK.LINK / PRODUCTS",
-        intro: "Independent, focused tools that respect your privacy. Each product has its own space while sharing the same design principles.",
+        titleLine1: "Small apps,",
+        titleLine2: "thoughtfully made.",
+        intro: "Small, focused tools that stand on their own and respect your privacy. Each is shaped by the same thoughtful approach to design.",
       },
       product: {
         category: "01 / HEALTH & FITNESS",
         name: "Daily Weight",
-        description: "Once in the morning, once at night.",
+        description: "One weigh-in each morning and night.",
       },
       footer: { contact: "Contact: " },
     },

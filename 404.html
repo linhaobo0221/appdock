@@ -7,7 +7,7 @@
     <link rel="icon" href="/assets/appdock-icon.svg?v=2" type="image/svg+xml" sizes="any" />
     <link rel="alternate icon" href="/favicon.ico?v=2" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2" />
-    <title>Page not found — AppDock.link</title>
+    <title data-i18n="title">Page not found — AppDock.link</title>
     <style>
       * { box-sizing: border-box; }
       body { display: grid; min-height: 100vh; margin: 0; place-items: center; color: #1a1a1a; background: #fafaf7; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -21,9 +21,54 @@
   <body>
     <main>
       <p>APPDOCK.LINK / 404</p>
-      <h1>Page not found.</h1>
-      <p>这个页面不存在，或者地址已经发生变化。</p>
-      <a href="/">返回 AppDock.link</a>
+      <h1 data-i18n="heading">Page not found.</h1>
+      <p data-i18n="description">这个页面不存在，或者地址已经发生变化。</p>
+      <a href="/" data-i18n="action">返回 AppDock.link</a>
     </main>
+    <script>
+      (() => {
+        const copy = {
+          "zh-CN": {
+            title: "Page not found — AppDock.link",
+            heading: "Page not found.",
+            description: "这个页面不存在，或者地址已经发生变化。",
+            action: "返回 AppDock.link",
+          },
+          ja: {
+            title: "ページが見つかりません — AppDock.link",
+            heading: "ページが見つかりません",
+            description: "ページが移動したか、URLが間違っている可能性があります。",
+            action: "AppDock.linkに戻る",
+          },
+          en: {
+            title: "Page not found — AppDock.link",
+            heading: "Page not found",
+            description: "This page doesn’t exist, or its URL may have changed.",
+            action: "Back to AppDock.link",
+          },
+        };
+
+        let preferredLocale;
+        try {
+          preferredLocale = window.localStorage.getItem("appdock.locale");
+        } catch {
+          preferredLocale = null;
+        }
+
+        const browserLocale = String(navigator.language || "").toLowerCase();
+        const locale = copy[preferredLocale]
+          ? preferredLocale
+          : browserLocale.startsWith("zh")
+            ? "zh-CN"
+            : browserLocale.startsWith("ja")
+              ? "ja"
+              : "en";
+
+        document.documentElement.lang = locale;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = copy[locale][element.dataset.i18n];
+        });
+      })();
+    </script>
   </body>
 </html>

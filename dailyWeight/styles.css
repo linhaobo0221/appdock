@@ -566,6 +566,771 @@ h2 {
   transform: translateX(-50%);
 }
 
+.app-screen-mockup {
+  container-type: inline-size;
+  overflow: hidden;
+  color: #171717;
+  border: 1px solid #e5e1db;
+  border-radius: 9.2% / 4.25%;
+  background: #fdfdfb;
+  box-shadow: 0 8px 24px rgb(49 42 35 / 4%);
+  font-family: var(--font-body);
+  line-height: 1.25;
+}
+
+.app-screen-visual {
+  position: absolute;
+  inset: 0;
+}
+
+.mock-status-bar {
+  position: absolute;
+  top: 2.5cqw;
+  right: 5.55cqw;
+  left: 6cqw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-latin);
+  font-size: 4.55cqw;
+  font-weight: 500;
+  letter-spacing: -0.08cqw;
+  line-height: 1;
+}
+
+.mock-status-network {
+  display: flex;
+  align-items: center;
+  gap: 2.25cqw;
+}
+
+.mock-status-network i {
+  width: 3.05cqw;
+  height: 1.55cqw;
+  background: currentColor;
+  transform: skewX(-10deg);
+}
+
+.mock-home-indicator {
+  position: absolute;
+  bottom: 1.75cqw;
+  left: 50%;
+  width: 35.7cqw;
+  height: 1.05cqw;
+  border-radius: 1cqw;
+  background: #d8d8d5;
+  transform: translateX(-50%);
+}
+
+.day-detail-screen .mock-home-indicator {
+  bottom: 6.65cqw;
+}
+
+/* Product screenshot rebuilt as live, localizable HTML. */
+.day-screen-header {
+  position: absolute;
+  top: 13.55cqw;
+  left: 3.9cqw;
+  display: flex;
+  height: 10.25cqw;
+  align-items: center;
+  gap: 3.2cqw;
+}
+
+.day-screen-header strong {
+  font-size: 5.65cqw;
+  font-weight: 700;
+  letter-spacing: -0.18cqw;
+  white-space: nowrap;
+}
+
+.day-back {
+  position: relative;
+  display: block;
+  width: 10.25cqw;
+  height: 10.25cqw;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #f5f4f2;
+}
+
+.day-back::after {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  width: 2.45cqw;
+  height: 2.45cqw;
+  border-bottom: 1.55cqw solid #1a1a1a;
+  border-left: 1.55cqw solid #1a1a1a;
+  content: "";
+  transform: translate(-38%, -50%) rotate(45deg);
+}
+
+.day-delta-card,
+.day-entry-card {
+  border: 0.55cqw solid #eadaca;
+  background: #fff;
+}
+
+.day-delta-card {
+  position: absolute;
+  top: 26.5cqw;
+  left: 6cqw;
+  width: 88cqw;
+  height: 34.65cqw;
+  padding: 2.65cqw 2.65cqw 0;
+  border-radius: 4.25cqw;
+}
+
+.day-delta-grid {
+  display: grid;
+  height: 21.55cqw;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2cqw;
+}
+
+.day-delta-tile {
+  min-width: 0;
+  padding: 2.55cqw 2.5cqw;
+  border-radius: 3.4cqw;
+  background: #f1efed;
+}
+
+.day-delta-tile-night {
+  background: #e9ede8;
+}
+
+.day-delta-label {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 1.7cqw;
+  color: #817a73;
+  font-size: 3.35cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-delta-label i {
+  width: 1.55cqw;
+  height: 1.55cqw;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #8f8c87;
+}
+
+.day-delta-tile-night .day-delta-label i {
+  background: var(--green);
+}
+
+.day-delta-tile strong {
+  display: block;
+  margin-top: 2.45cqw;
+  font-family: var(--font-latin);
+  font-size: 5.65cqw;
+  font-weight: 500;
+  letter-spacing: -0.14cqw;
+  line-height: 0.92;
+  white-space: nowrap;
+}
+
+.day-delta-tile-night strong {
+  color: var(--green);
+}
+
+.day-delta-formula {
+  display: block;
+  margin-top: 2.05cqw;
+  color: #817a73;
+  font-size: 3.1cqw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-delta-card > p {
+  display: flex;
+  min-height: 8.4cqw;
+  align-items: center;
+  margin: 0;
+  color: #817a73;
+  font-size: 3.18cqw;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.day-entry-card {
+  position: absolute;
+  left: 6cqw;
+  width: 88cqw;
+  height: 37.1cqw;
+  border-radius: 4.25cqw;
+}
+
+.day-entry-morning {
+  top: 65.45cqw;
+}
+
+.day-entry-evening {
+  top: 106.7cqw;
+}
+
+.day-entry-icon {
+  position: absolute;
+  top: 5.3cqw;
+  left: 4.2cqw;
+  display: grid;
+  width: 8.15cqw;
+  height: 8.15cqw;
+  place-items: center;
+  border-radius: 2.55cqw;
+  color: #d79519;
+  background: #fff3d3;
+}
+
+.day-entry-evening .day-entry-icon {
+  color: #7665ca;
+  background: #f0edff;
+}
+
+.day-entry-icon svg {
+  width: 5.3cqw;
+  height: 5.3cqw;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.day-entry-heading {
+  position: absolute;
+  top: 4.55cqw;
+  left: 15.2cqw;
+}
+
+.day-entry-heading strong,
+.day-entry-heading span {
+  display: block;
+}
+
+.day-entry-heading strong {
+  font-size: 4.45cqw;
+  font-weight: 700;
+  letter-spacing: -0.12cqw;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.day-entry-heading span {
+  margin-top: 2.2cqw;
+  color: #97938e;
+  font-family: var(--font-latin);
+  font-size: 3.55cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-entry-card > b {
+  position: absolute;
+  top: 18.2cqw;
+  left: 4.25cqw;
+  font-family: var(--font-latin);
+  font-size: 7.75cqw;
+  font-weight: 600;
+  letter-spacing: -0.34cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-entry-morning > b {
+  color: var(--green);
+}
+
+.day-entry-card > p {
+  position: absolute;
+  bottom: 4.05cqw;
+  left: 4.25cqw;
+  color: #97938e;
+  font-size: 3.45cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-notes-card {
+  position: absolute;
+  top: 147.7cqw;
+  left: 6cqw;
+  width: 88cqw;
+  height: 20.85cqw;
+  padding: 4.25cqw;
+  border: 0.55cqw solid #e5e1db;
+  border-radius: 4.25cqw;
+  background: #f4f3f1;
+}
+
+.day-notes-card strong {
+  display: block;
+  font-size: 4.25cqw;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.day-notes-card p {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  margin-top: 4.15cqw;
+  color: #97938e;
+  font-size: 3.35cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-notes-card p span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-notes-card p i {
+  margin-left: 1.2cqw;
+  font-style: normal;
+}
+
+.day-edit-actions {
+  position: absolute;
+  top: 172.8cqw;
+  left: 6cqw;
+  display: grid;
+  width: 88cqw;
+  height: 12.35cqw;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.85cqw;
+}
+
+.day-edit-actions span {
+  display: grid;
+  min-width: 0;
+  place-items: center;
+  overflow: hidden;
+  color: var(--green);
+  border: 0.65cqw solid var(--green);
+  border-radius: 4.25cqw;
+  font-size: 3.85cqw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.day-delete {
+  position: absolute;
+  top: 200.05cqw;
+  left: 0;
+  width: 100%;
+  color: #97938e;
+  font-size: 3.55cqw;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Weekly trend screenshot rebuilt as live, localizable HTML. */
+.trend-screen-header {
+  position: absolute;
+  top: 15.6cqw;
+  right: 6cqw;
+  left: 6cqw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trend-screen-header strong {
+  font-size: 6.8cqw;
+  font-weight: 700;
+  letter-spacing: -0.25cqw;
+  line-height: 1;
+}
+
+.trend-screen-header > span {
+  display: grid;
+  min-width: 29.7cqw;
+  height: 7.9cqw;
+  padding-inline: 3cqw;
+  place-items: center;
+  color: var(--green);
+  border-radius: 4.2cqw;
+  background: #eef1ed;
+  font-size: 3.4cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.trend-period-tabs {
+  position: absolute;
+  top: 26.55cqw;
+  left: 6cqw;
+  display: grid;
+  width: 88cqw;
+  height: 10.95cqw;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.05cqw;
+  border-radius: 5.5cqw;
+  background: #f4f2ef;
+  color: #8d8984;
+  font-size: 4cqw;
+}
+
+.trend-period-tabs span {
+  display: grid;
+  place-items: center;
+  border-radius: 4.6cqw;
+  line-height: 1;
+}
+
+.trend-period-tabs .is-active {
+  color: var(--green);
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(40 34 29 / 4%);
+  font-weight: 600;
+}
+
+.trend-chart-card {
+  position: absolute;
+  top: 42.1cqw;
+  left: 6cqw;
+  width: 88cqw;
+  height: 66.1cqw;
+  border: 0.55cqw solid #e5e1db;
+  border-radius: 5.65cqw;
+  background: #fff;
+}
+
+.trend-chart-heading {
+  position: absolute;
+  top: 4.7cqw;
+  right: 4.25cqw;
+  left: 4.25cqw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.trend-chart-heading strong {
+  font-size: 4.5cqw;
+  font-weight: 500;
+  letter-spacing: -0.12cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.trend-chart-heading span {
+  color: var(--green);
+  font-family: var(--font-latin);
+  font-size: 3.45cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.trend-chart-plot {
+  position: absolute;
+  top: 19.1cqw;
+  right: 0;
+  left: 0;
+  height: 33.2cqw;
+}
+
+.trend-chart-plot svg {
+  position: absolute;
+  top: 0;
+  left: 13.1cqw;
+  width: 69.3cqw;
+  height: 33.2cqw;
+  overflow: visible;
+}
+
+.trend-chart-plot path {
+  fill: none;
+}
+
+.trend-grid-line {
+  stroke: #e6e3df;
+  stroke-width: 0.7;
+}
+
+.trend-goal-line {
+  stroke: var(--green);
+  stroke-dasharray: 3 3;
+  stroke-width: 1;
+}
+
+.trend-evening-line {
+  stroke: #aaa8a4;
+  stroke-linecap: round;
+  stroke-width: 1.15;
+}
+
+.trend-morning-line {
+  stroke: var(--green);
+  stroke-linecap: round;
+  stroke-width: 1.55;
+}
+
+.trend-axis {
+  position: absolute;
+  left: 6cqw;
+  color: #98948f;
+  font-family: var(--font-latin);
+  font-size: 3.45cqw;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.trend-axis-63 { top: 2.8cqw; }
+.trend-axis-62 { top: 15.2cqw; }
+.trend-axis-61 { top: 27.55cqw; }
+
+.trend-chart-legend {
+  position: absolute;
+  right: 4.25cqw;
+  bottom: 4.5cqw;
+  left: 4.25cqw;
+  display: flex;
+  align-items: center;
+  color: #88837e;
+  font-size: 3.35cqw;
+  line-height: 1;
+}
+
+.trend-chart-legend > span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.trend-chart-legend > span + span {
+  margin-left: 3.6cqw;
+}
+
+.trend-chart-legend > span:last-child {
+  margin-left: auto;
+  font-family: var(--font-latin);
+}
+
+.trend-chart-legend i {
+  width: 3cqw;
+  height: 3cqw;
+  margin-right: 1.25cqw;
+  border-radius: 50%;
+  background: #aaa8a4;
+}
+
+.trend-chart-legend i.is-morning {
+  background: var(--green);
+}
+
+.trend-metric-grid {
+  position: absolute;
+  top: 111.95cqw;
+  left: 6cqw;
+  display: grid;
+  width: 88cqw;
+  height: 17.75cqw;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.15cqw;
+}
+
+.trend-metric-grid > div {
+  min-width: 0;
+  padding: 3.2cqw 3cqw;
+  border: 0.55cqw solid #e5e1db;
+  border-radius: 4.25cqw;
+  background: #fff;
+}
+
+.trend-metric-grid span,
+.trend-metric-grid strong {
+  display: block;
+  white-space: nowrap;
+}
+
+.trend-metric-grid span {
+  color: #817a73;
+  font-size: 3.35cqw;
+  line-height: 1;
+}
+
+.trend-metric-grid strong {
+  margin-top: 3cqw;
+  font-family: var(--font-latin);
+  font-size: 4.75cqw;
+  font-weight: 500;
+  letter-spacing: -0.08cqw;
+  line-height: 1;
+}
+
+.trend-metric-grid strong.is-green {
+  color: var(--green);
+}
+
+.trend-metric-grid small {
+  font-size: 0.75em;
+}
+
+.trend-insight {
+  position: absolute;
+  top: 133.9cqw;
+  left: 6cqw;
+  width: 88cqw;
+  height: 25.8cqw;
+  padding: 4.25cqw;
+  border-radius: 4.25cqw;
+  background: #eef1ed;
+}
+
+.trend-insight strong {
+  display: block;
+  font-size: 4.25cqw;
+  font-weight: 600;
+  letter-spacing: -0.08cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.trend-insight p {
+  margin-top: 3.25cqw;
+  color: #8e8a84;
+  font-size: 3.25cqw;
+  line-height: 1.55;
+}
+
+.trend-bottom-nav {
+  position: absolute;
+  bottom: 5.65cqw;
+  left: 4.2cqw;
+  display: grid;
+  width: 91.6cqw;
+  height: 20.15cqw;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2.25cqw 3cqw;
+  border: 0.55cqw solid #eadaca;
+  border-radius: 5.65cqw;
+  background: #fff;
+  box-shadow: 0 3.5cqw 8.5cqw rgb(61 51 43 / 9%);
+}
+
+.trend-bottom-nav > span {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #756f68;
+  border-radius: 4.25cqw;
+}
+
+.trend-bottom-nav > span.is-active {
+  color: #a84e18;
+  background: #fff0de;
+}
+
+.trend-bottom-nav svg {
+  width: 6.3cqw;
+  height: 6.3cqw;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.trend-bottom-nav i {
+  margin-top: 1.25cqw;
+  overflow: hidden;
+  font-size: 3.35cqw;
+  font-style: normal;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html[lang="ja"] .day-delta-label,
+html[lang="en"] .day-delta-label {
+  gap: 1.2cqw;
+  font-size: 2.95cqw;
+}
+
+html[lang="en"] .day-delta-tile {
+  padding-inline: 1.8cqw;
+}
+
+html[lang="ja"] .day-delta-formula,
+html[lang="en"] .day-delta-formula {
+  font-size: 2.65cqw;
+}
+
+html[lang="ja"] .day-delta-card > p,
+html[lang="en"] .day-delta-card > p {
+  font-size: 2.75cqw;
+}
+
+html[lang="ja"] .day-entry-card > p,
+html[lang="en"] .day-entry-card > p,
+html[lang="ja"] .day-notes-card p,
+html[lang="en"] .day-notes-card p {
+  font-size: 3cqw;
+}
+
+html[lang="en"] .day-entry-heading strong {
+  font-size: 3.8cqw;
+}
+
+html[lang="en"] .day-edit-actions span {
+  font-size: 2.85cqw;
+}
+
+html[lang="ja"] .day-edit-actions span {
+  font-size: 3.25cqw;
+}
+
+html[lang="en"] .trend-chart-heading strong {
+  font-size: 3.75cqw;
+}
+
+html[lang="en"] .trend-chart-heading span,
+html[lang="ja"] .trend-chart-heading span {
+  font-size: 3cqw;
+}
+
+html[lang="en"] .trend-chart-legend,
+html[lang="ja"] .trend-chart-legend {
+  font-size: 2.85cqw;
+}
+
+html[lang="en"] .trend-metric-grid span,
+html[lang="ja"] .trend-metric-grid span {
+  font-size: 2.85cqw;
+}
+
+html[lang="en"] .trend-metric-grid > div {
+  padding-inline: 2.4cqw;
+}
+
+html[lang="en"] .trend-insight strong,
+html[lang="ja"] .trend-insight strong {
+  font-size: 3.55cqw;
+}
+
+html[lang="en"] .trend-insight p,
+html[lang="ja"] .trend-insight p {
+  font-size: 2.75cqw;
+  line-height: 1.45;
+}
+
+html[lang="en"] .trend-bottom-nav i {
+  font-size: 2.85cqw;
+}
+
 .hero-stage .phone-screen {
   top: 70px;
 }
@@ -1979,7 +2744,7 @@ body.is-modal-open {
   }
 
   .trends-stage {
-    aspect-ratio: 560 / 772;
+    aspect-ratio: 514 / 758;
   }
 
   .phone-screen {
@@ -2152,6 +2917,18 @@ body.is-modal-open {
 
   .legal-document-section {
     padding-block: 21px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-stage,
+  .trends-stage {
+    aspect-ratio: 514 / 930;
+  }
+
+  .phone-screen {
+    top: 8% !important;
+    width: 68%;
   }
 }
 

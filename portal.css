@@ -264,9 +264,9 @@ footer {
   .language-switcher { width: 146px; }
   main { padding: 82px 0 80px; }
   .intro { margin-bottom: 48px; }
-  .product-card { grid-template-columns: 58px 1fr; gap: 18px; padding: 22px; }
+  .product-card { grid-template-columns: 58px minmax(0, 1fr) auto; gap: 18px; padding: 22px; }
   .product-card img { width: 58px; height: 58px; border-radius: 14px; }
   .product-card strong { font-size: 20px; }
-  .arrow { display: none; }
+  .arrow { display: block; justify-self: end; line-height: 1; }
   footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 12px; }
 }
