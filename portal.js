@@ -7,7 +7,6 @@
   const messages = {
     "zh-CN": {
       meta: {
-        title: "AppDock — 用心打磨的小应用",
         description: "AppDock 汇集独立、克制、尊重隐私的小应用。",
       },
       a11y: { language: "选择语言" },
@@ -24,7 +23,6 @@
     },
     ja: {
       meta: {
-        title: "AppDock — 小さなアプリを、丁寧に",
         description: "AppDockは、独立して使え、プライバシーを尊重する小さなアプリを届けます。",
       },
       a11y: { language: "言語を選択" },
@@ -41,7 +39,6 @@
     },
     en: {
       meta: {
-        title: "AppDock — Small apps, thoughtfully made",
         description: "AppDock is home to independent, focused apps that respect your privacy.",
       },
       a11y: { language: "Choose language" },
@@ -93,8 +90,6 @@
     const nextLocale = SUPPORTED_LOCALES.includes(locale) ? locale : "en";
     document.documentElement.lang = nextLocale;
     document.body.dataset.locale = nextLocale;
-    document.title = messages[nextLocale].meta.title;
-
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const value = resolveMessage(nextLocale, element.dataset.i18n);
       if (typeof value === "string") element.textContent = value;
