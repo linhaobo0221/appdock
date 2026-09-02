@@ -100,26 +100,38 @@ footer {
 .brand-baseline { width: 14px; height: 2px; background: #fff; }
 
 .language-switcher {
-  display: flex;
+  display: grid;
+  width: 208px;
+  height: 38px;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 8px;
-  color: #a09890;
-  font-size: 12px;
+  padding: 3px;
+  border: 1px solid #e5e1db;
+  border-radius: 19px;
+  background: #fff;
 }
 
 .language-switcher button {
-  padding: 8px 2px;
-  color: #8b837b;
+  padding: 0;
+  color: #736a61;
   border: 0;
   background: transparent;
-  font: inherit;
+  font-family: "AppDock Inter", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
   cursor: pointer;
-  transition: color 160ms ease;
+  transition: color 160ms ease, background-color 160ms ease;
 }
 
-.language-switcher button:hover,
-.language-switcher button.is-active {
+.language-switcher button:hover {
   color: #1a1a1a;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: #1a1a1a;
+  border-radius: 15px;
+  background: #f2f0ed;
+  font-weight: 600;
 }
 
 main {
@@ -246,6 +258,8 @@ footer {
 }
 
 @media (max-width: 600px) {
+  body { padding-inline: 16px; }
+  .language-switcher { width: 168px; }
   main { padding: 82px 0 80px; }
   .intro { margin-bottom: 48px; }
   .product-card { grid-template-columns: 58px 1fr; gap: 18px; padding: 22px; }

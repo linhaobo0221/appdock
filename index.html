@@ -23,12 +23,10 @@
       </span>
       <span>AppDock</span>
     </a>
-    <div class="language-switcher" aria-label="选择语言" data-i18n-aria-label="a11y.language">
-      <button type="button" data-locale="zh-CN">中文</button>
-      <span aria-hidden="true">/</span>
-      <button type="button" data-locale="ja">日本語</button>
-      <span aria-hidden="true">/</span>
-      <button type="button" data-locale="en">EN</button>
+    <div class="language-switcher" role="group" aria-label="选择语言" data-i18n-aria-label="a11y.language">
+      <button type="button" data-locale="zh-CN" aria-pressed="true">中文</button>
+      <button type="button" data-locale="ja" aria-pressed="false">日本語</button>
+      <button type="button" data-locale="en" aria-pressed="false">EN</button>
     </div>
   </header>
   <main>
