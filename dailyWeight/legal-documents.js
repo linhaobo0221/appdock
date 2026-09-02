@@ -35,7 +35,7 @@
         },
         {
           title: "政策更新与联系",
-          body: "如果 App 功能或数据处理方式发生变化，我们会随 App 更新修订本政策。如有疑问，请访问 appdock.link/dailyWeight/support/。",
+          body: "如果 App 功能或数据处理方式发生变化，我们会随 App 更新修订本政策。如有疑问，请发送邮件至 support@appdock.link。",
         },
       ],
       terms: [
@@ -65,7 +65,7 @@
         },
         {
           title: "条款变更与联系",
-          body: "当 App 功能或适用要求发生变化时，我们可能修订本条款；更新后的文本和生效日期会显示在这里。如有疑问，请访问 appdock.link/dailyWeight/support/。",
+          body: "当 App 功能或适用要求发生变化时，我们可能修订本条款；更新后的文本和生效日期会显示在这里。如有疑问，请发送邮件至 support@appdock.link。",
         },
       ],
     },
@@ -102,7 +102,7 @@
         },
         {
           title: "改定とお問い合わせ",
-          body: "本アプリの機能またはデータの取扱いが変わる場合、本ポリシーもアプリの更新に合わせて改定します。ご質問は、appdock.link/dailyWeight/support/ をご覧ください。",
+          body: "本アプリの機能またはデータの取扱いが変わる場合、本ポリシーもアプリの更新に合わせて改定します。ご質問は support@appdock.link までメールでお問い合わせください。",
         },
       ],
       terms: [
@@ -132,7 +132,7 @@
         },
         {
           title: "規約の変更とお問い合わせ",
-          body: "本アプリまたは適用される要件の変更に合わせて、本規約を改定する場合があります。改定後の本文と施行日はここに表示します。ご質問は、appdock.link/dailyWeight/support/ をご覧ください。",
+          body: "本アプリまたは適用される要件の変更に合わせて、本規約を改定する場合があります。改定後の本文と施行日はここに表示します。ご質問は support@appdock.link までメールでお問い合わせください。",
         },
       ],
     },
@@ -169,7 +169,7 @@
         },
         {
           title: "Updates and contact",
-          body: "If the app's features or data handling change, this policy will be updated with the app. For questions, visit appdock.link/dailyWeight/support/.",
+          body: "If the app's features or data handling change, this policy will be updated with the app. For questions, contact support@appdock.link.",
         },
       ],
       terms: [
@@ -199,7 +199,7 @@
         },
         {
           title: "Changes and contact",
-          body: "These terms may be revised when the app or applicable requirements change. The updated text and effective date will appear here. For questions, visit appdock.link/dailyWeight/support/.",
+          body: "These terms may be revised when the app or applicable requirements change. The updated text and effective date will appear here. For questions, contact support@appdock.link.",
         },
       ],
     },
