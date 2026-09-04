@@ -22,10 +22,12 @@ Daily Weight is not a medical device and does not diagnose or treat medical cond
 ## Directory contents
 
 - `index.html` — product page and legal-document modal structure
-- `styles.css` — page and responsive styles
-- `app.js` — language switching, localized images, and legal-modal behavior
+- `styles.css` — responsive page and CSS app previews, matching Figma node `32:1050`
+- `appdock-shared.css` — preserved AppDock footer and legal-modal styles
+- `../assets/language-switcher.css` — Figma language-switcher styles shared with the AppDock portal
+- `app.js` — Chinese, Japanese, and English copy, language selection, and legal-modal behavior
 - `legal-documents.js` — Chinese, Japanese, and English privacy and terms text aligned with the app
-- `assets/` — app icons, product UI images, backup images, and web fonts
+- `assets/` — original Figma SVG icons and locally served fonts; older raster assets are not used by the page
 
 ## Localization and legal text
 

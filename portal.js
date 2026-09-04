@@ -27,14 +27,14 @@
     ja: {
       meta: {
         title: "AppDock.link — 小さなアプリを、ていねいに。",
-        description: "AppDock.linkは、それぞれ独立して使える、シンプルでプライバシーに配慮した小さなアプリを届けます。",
+        description: "AppDock.linkは、必要な機能に絞り、プライバシーを大切にした小さなアプリを紹介するサイトです。それぞれ単独で使えます。",
       },
       a11y: { language: "言語を選択" },
       hero: {
-        eyebrow: "APPDOCK.LINK / プロダクト",
+        eyebrow: "APPDOCK.LINK / アプリ",
         titleLine1: "Small apps,",
         titleLine2: "thoughtfully made.",
-        intro: "機能を絞り、プライバシーに配慮した小さなツール。それぞれが独立しながら、共通の設計思想でつくられています。",
+        intro: "必要な機能に絞り、プライバシーを大切にした小さなツール。それぞれ独立したアプリでありながら、設計の考え方は共通です。",
       },
       product: {
         category: "01 / ヘルスケア／フィットネス",
@@ -46,19 +46,19 @@
     en: {
       meta: {
         title: "AppDock.link — Small apps, thoughtfully made.",
-        description: "AppDock.link is home to small, focused apps that stand on their own and respect your privacy.",
+        description: "AppDock.link is home to small, independent apps that focus on the essentials and respect your privacy.",
       },
       a11y: { language: "Choose language" },
       hero: {
         eyebrow: "APPDOCK.LINK / PRODUCTS",
         titleLine1: "Small apps,",
         titleLine2: "thoughtfully made.",
-        intro: "Small, focused tools that stand on their own and respect your privacy. Each is shaped by the same thoughtful approach to design.",
+        intro: "Small, independent tools that focus on the essentials and respect your privacy. Each has its own space and shares the same design principles.",
       },
       product: {
         category: "01 / HEALTH & FITNESS",
         name: "Daily Weight",
-        description: "One weigh-in each morning and night.",
+        description: "Log your weight each morning and evening.",
       },
       footer: { contact: "Contact: " },
     },
@@ -114,7 +114,7 @@
       if (typeof value === "string") element.setAttribute("aria-label", value);
     });
 
-    document.querySelectorAll("[data-locale]").forEach((button) => {
+    document.querySelectorAll("button[data-locale]").forEach((button) => {
       const isActive = button.dataset.locale === nextLocale;
       button.classList.toggle("is-active", isActive);
       button.setAttribute("aria-pressed", String(isActive));
@@ -129,7 +129,7 @@
     }
   };
 
-  document.querySelectorAll("[data-locale]").forEach((button) => {
+  document.querySelectorAll("button[data-locale]").forEach((button) => {
     button.addEventListener("click", () => applyLocale(button.dataset.locale, true));
   });
 

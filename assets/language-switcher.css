@@ -1,0 +1,63 @@
+/* Figma 48:31 — shared by the AppDock portal and Daily Weight. */
+.language-switcher {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+  gap: 2px;
+  padding: 4px;
+  border: 0;
+  border-radius: 24px;
+  background: #f1efec;
+}
+
+.language-switcher button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  color: #787570;
+  font-family:
+    "AppDock.link Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.language-switcher button:hover {
+  color: #2e2d2a;
+}
+.language-switcher button[aria-pressed="true"] {
+  color: #2e2d2a;
+  background: #fff;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+}
+.language-switcher button:focus-visible {
+  outline: 2px solid #a76c1e;
+  outline-offset: 3px;
+}
+
+@media (pointer: coarse) {
+  .language-switcher button {
+    min-height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .language-switcher button {
+    transition: none;
+  }
+}

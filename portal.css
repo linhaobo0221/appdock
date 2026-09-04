@@ -5,6 +5,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "AppDock.link Inter";
+  src: url("./dailyWeight/assets/fonts/inter-500.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
 :root {
   --portal-font: "AppDock.link Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -99,40 +106,6 @@ footer {
 .brand-bars i:nth-child(3) { height: 12px; background: #f08133; }
 .brand-baseline { width: 14px; height: 2px; background: #fff; }
 
-.language-switcher {
-  display: grid;
-  width: 208px;
-  height: 38px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  padding: 3px;
-  border: 1px solid #e5e1db;
-  border-radius: 19px;
-  background: #fff;
-}
-
-.language-switcher button {
-  padding: 0;
-  color: #736a61;
-  border: 0;
-  background: transparent;
-  font-family: "AppDock.link Inter", sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: color 160ms ease, background-color 160ms ease;
-}
-
-.language-switcher button:hover {
-  color: #1a1a1a;
-}
-
-.language-switcher button[aria-pressed="true"] {
-  color: #1a1a1a;
-  border-radius: 15px;
-  background: #f2f0ed;
-  font-weight: 600;
-}
 
 main {
   padding: 132px 0 120px;
@@ -261,7 +234,6 @@ footer {
   body { padding-inline: 16px; }
   .brand { gap: 9px; font-size: 16px; }
   .brand-mark { width: 28px; height: 28px; }
-  .language-switcher { width: 146px; }
   main { padding: 82px 0 80px; }
   .intro { margin-bottom: 48px; }
   .product-card { grid-template-columns: 58px minmax(0, 1fr) auto; gap: 18px; padding: 22px; }
@@ -269,4 +241,9 @@ footer {
   .product-card strong { font-size: 20px; }
   .arrow { display: block; justify-self: end; line-height: 1; }
   footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 12px; }
+}
+
+@media (max-width: 480px) {
+  header { height: auto; min-height: 72px; flex-wrap: wrap; gap: 16px; padding-block: 18px; }
+  header .language-switcher { margin-left: auto; }
 }
