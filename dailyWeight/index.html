@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#faf8f5" />
+    <meta name="theme-color" content="#fcfaf7" />
     <meta
       name="description"
       content="朝夕体重是一款本地优先的早晚体重记录工具。无需账户，记录不上传，并支持加密 PNG 备份与恢复。"
@@ -25,15 +25,15 @@
     <link rel="canonical" href="https://appdock.link/dailyWeight/" />
     <link
       rel="icon"
-      href="./assets/images/app-icon.svg?v=4"
+      href="./assets/images/app-icon.svg?v=5"
       type="image/svg+xml"
       sizes="any"
     />
-    <link rel="alternate icon" href="./favicon.ico?v=4" sizes="32x32" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=4" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="alternate icon" href="./favicon.ico?v=5" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=5" />
     <link rel="stylesheet" href="./appdock-shared.css" />
     <link rel="stylesheet" href="../assets/language-switcher.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./legal-documents.js" defer></script>
     <script src="./app.js" defer></script>
     <title data-i18n="meta.title">朝夕体重 — 每天两个数字，静观变化</title>
@@ -45,7 +45,7 @@
       <div class="container header-inner">
         <a class="product-brand" href="#product"
           ><img
-            src="./assets/images/app-icon.svg?v=4"
+            src="./assets/images/app-icon.svg?v=5"
             alt=""
             width="28"
             height="28"
@@ -102,14 +102,16 @@
         <div class="container split-layout hero-inner">
           <div class="hero-copy">
             <p data-i18n="hero.tag" class="hero-tag">
-              记录很少，看到的变化更多。
+              静观晨昏变化，记下真实的每一天。
             </p>
             <h1 data-i18n="hero.title">
-              每天两个数字，看懂一天、一夜和长期趋势。
+              一天两次，
+              把变化留给时间。
             </h1>
             <p data-i18n="hero.intro" class="hero-description">
               只记录晨重和晚重，无需注册账号。核心数据完全保存在本机，换设备时用一张加密图片即可完成迁移。
             </p>
+            <a class="hero-link" href="#features"><span data-i18n="nav.features">核心功能</span><span aria-hidden="true">↓</span></a>
             <ul class="trust-signals">
               <li>
                 <img
@@ -140,189 +142,7 @@
               </li>
             </ul>
           </div>
-          <div
-            class="phone today-phone"
-            role="img"
-            aria-label="朝夕体重的今日记录界面：晨重、晚重、当天差额和隔夜变化。"
-            data-i18n-aria-label="screen.todayAlt"
-          >
-            <div class="phone-ui" aria-hidden="true">
-              <div class="phone-status">
-                <span>07:32</span>
-                <div class="status-icons">
-                  <img
-                    class="icon"
-                    src="./assets/icons/signal.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/wifi.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/battery.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-              </div>
-              <div class="phone-heading">
-                <p data-i18n="screen.date">2026/09/04 周五</p>
-                <strong data-i18n="screen.logToday">记录今天</strong>
-              </div>
-              <div class="weight-slots">
-                <div class="weight-slot morning">
-                  <div class="period-icon">
-                    <img
-                      class="icon"
-                      src="./assets/icons/sun.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    />
-                  </div>
-                  <div class="weight-details">
-                    <p>
-                      <span data-i18n="screen.morning">晨重</span>
-                      <span>(07:32)</span>
-                    </p>
-                    <strong>62.1 <small>kg</small></strong
-                    ><span class="bmi-value">BMI 21.5</span>
-                  </div>
-                  <img
-                    class="icon edit-icon"
-                    src="./assets/icons/edit.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                <div class="weight-slot evening">
-                  <div class="period-icon">
-                    <img
-                      class="icon"
-                      src="./assets/icons/moon.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    />
-                  </div>
-                  <div class="weight-details">
-                    <p>
-                      <span data-i18n="screen.evening">晚重</span>
-                      <span>(21:15)</span>
-                    </p>
-                    <strong>62.4 <small>kg</small></strong
-                    ><span class="bmi-value">BMI 21.6</span>
-                  </div>
-                  <img
-                    class="icon edit-icon"
-                    src="./assets/icons/edit-evening.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-              </div>
-              <div class="phone-metrics">
-                <div>
-                  <span data-i18n="screen.dayDelta">当天差额</span
-                  ><strong class="morning">+0.3 kg</strong>
-                </div>
-                <div>
-                  <span data-i18n="screen.overnightDelta">隔夜变化</span
-                  ><strong class="positive">−0.4 kg</strong>
-                </div>
-              </div>
-              <div class="phone-rhythm">
-                <p data-i18n="screen.rhythm">三点起伏</p>
-                <div class="mini-moments">
-                  <div class="mini-moment muted">
-                    <span data-i18n="screen.lastNight">昨晚</span
-                    ><strong>62.5</strong>
-                  </div>
-                  <span class="small-chevron"
-                    ><img
-                      class="icon"
-                      src="./assets/icons/chevron.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                  /></span>
-                  <div class="mini-moment morning">
-                    <span data-i18n="screen.thisMorning">今晨</span
-                    ><strong>62.1</strong>
-                  </div>
-                  <span class="small-chevron"
-                    ><img
-                      class="icon"
-                      src="./assets/icons/chevron.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                  /></span>
-                  <div class="mini-moment evening">
-                    <span data-i18n="screen.tonight">今晚</span
-                    ><strong>62.4</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-complete">
-                <img
-                  class="icon"
-                  src="./assets/icons/check-circle.svg"
-                  alt=""
-                  width="20"
-                  height="20"
-                /><span data-i18n="screen.complete"
-                  >今日记录已完成。日升日落，静观变化。</span
-                >
-              </div>
-              <div class="phone-tabs">
-                <div class="phone-tab selected">
-                  <img
-                    class="icon"
-                    src="./assets/icons/calendar-active.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.today">今天</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/trending.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.trends">趋势</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/history.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.history">历史</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/settings.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.settings">设置</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="hero-display"><img class="app-screen" src="./assets/screens/today-zh-CN.webp" srcset="./assets/screens/today-zh-CN.webp 1x, ./assets/screens/today-zh-CN@2x.webp 2x, ./assets/screens/today-zh-CN@3x.webp 3x" data-screen="today" width="441" height="900" alt="朝夕体重的今日记录界面：晨重、晚重、当天差额和隔夜变化。" data-i18n-alt="screen.todayAlt" fetchpriority="high" decoding="async" /></div>
         </div>
       </section>
       <section class="section" id="features">
@@ -336,137 +156,13 @@
           </div>
           <div class="section-content phone-pair">
             <figure class="phone-figure morning">
-              <div
-                class="phone entry-phone morning"
-                role="img"
-                aria-label="晨重输入界面，包含体重数字与数字键盘。"
-                data-i18n-aria-label="screen.entryMorningAlt"
-              >
-                <div class="phone-ui" aria-hidden="true">
-                  <div class="phone-status">
-                    <span>07:32</span>
-                    <div class="status-icons">
-                      <img
-                        class="icon"
-                        src="./assets/icons/signal.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/wifi.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/battery.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      />
-                    </div>
-                  </div>
-                  <div class="entry-nav">
-                    <img
-                      class="icon"
-                      src="./assets/icons/arrow-left.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    /><strong data-i18n="screen.entrymorning">记录晨重</strong
-                    ><span data-i18n="screen.save" class="entry-save"
-                      >保存</span
-                    >
-                  </div>
-                  <div class="entry-form">
-                    <p>2026/09/04 07:32</p>
-                    <div class="entry-value">62.1<small>kg</small></div>
-                    <span data-i18n="screen.notemorning" class="entry-note"
-                      >晨间 (空腹/排便后)</span
-                    >
-                  </div>
-                  <div class="keypad">
-                    <div class="keypad-grid">
-                      <span>1</span><span>2</span><span>3</span><span>4</span
-                      ><span>5</span><span>6</span><span>7</span><span>8</span
-                      ><span>9</span><span>.</span><span>0</span><span>⌫</span>
-                    </div>
-                    <span data-i18n="screen.saveWeight" class="phone-button"
-                      >保存体重</span
-                    >
-                  </div>
-                  <div class="entry-home"></div>
-                </div>
-              </div>
+              <img class="app-screen" src="./assets/screens/morning-zh-CN.webp" srcset="./assets/screens/morning-zh-CN.webp 1x, ./assets/screens/morning-zh-CN@2x.webp 2x, ./assets/screens/morning-zh-CN@3x.webp 3x" data-screen="morning" width="441" height="900" alt="晨重输入界面，包含体重数字与数字键盘。" data-i18n-alt="screen.entryMorningAlt" loading="lazy" decoding="async" />
               <figcaption data-i18n="simplicity.morning">
                 晨间 · 空腹轻盈记录
               </figcaption>
             </figure>
             <figure class="phone-figure evening">
-              <div
-                class="phone entry-phone evening"
-                role="img"
-                aria-label="晚重输入界面，包含体重数字与数字键盘。"
-                data-i18n-aria-label="screen.entryEveningAlt"
-              >
-                <div class="phone-ui" aria-hidden="true">
-                  <div class="phone-status">
-                    <span>07:32</span>
-                    <div class="status-icons">
-                      <img
-                        class="icon"
-                        src="./assets/icons/signal.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/wifi.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/battery.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      />
-                    </div>
-                  </div>
-                  <div class="entry-nav">
-                    <img
-                      class="icon"
-                      src="./assets/icons/arrow-left.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    /><strong data-i18n="screen.entryevening">记录晚重</strong
-                    ><span data-i18n="screen.save" class="entry-save"
-                      >保存</span
-                    >
-                  </div>
-                  <div class="entry-form">
-                    <p>2026/09/04 21:15</p>
-                    <div class="entry-value">62.4<small>kg</small></div>
-                    <span data-i18n="screen.noteevening" class="entry-note"
-                      >晚间 (睡前)</span
-                    >
-                  </div>
-                  <div class="keypad">
-                    <div class="keypad-grid">
-                      <span>1</span><span>2</span><span>3</span><span>4</span
-                      ><span>5</span><span>6</span><span>7</span><span>8</span
-                      ><span>9</span><span>.</span><span>0</span><span>⌫</span>
-                    </div>
-                    <span data-i18n="screen.saveWeight" class="phone-button"
-                      >保存体重</span
-                    >
-                  </div>
-                  <div class="entry-home"></div>
-                </div>
-              </div>
+              <img class="app-screen" src="./assets/screens/evening-zh-CN.webp" srcset="./assets/screens/evening-zh-CN.webp 1x, ./assets/screens/evening-zh-CN@2x.webp 2x, ./assets/screens/evening-zh-CN@3x.webp 3x" data-screen="evening" width="441" height="900" alt="晚重输入界面，包含体重数字与数字键盘。" data-i18n-alt="screen.entryEveningAlt" loading="lazy" decoding="async" />
               <figcaption data-i18n="simplicity.evening">
                 晚间 · 睡前规律记录
               </figcaption>
@@ -504,189 +200,7 @@
               </div>
             </dl>
           </div>
-          <div
-            class="phone today-phone"
-            role="img"
-            aria-label="朝夕体重的今日记录界面：晨重、晚重、当天差额和隔夜变化。"
-            data-i18n-aria-label="screen.todayAlt"
-          >
-            <div class="phone-ui" aria-hidden="true">
-              <div class="phone-status">
-                <span>07:32</span>
-                <div class="status-icons">
-                  <img
-                    class="icon"
-                    src="./assets/icons/signal.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/wifi.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/battery.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-              </div>
-              <div class="phone-heading">
-                <p data-i18n="screen.date">2026/09/04 周五</p>
-                <strong data-i18n="screen.logToday">记录今天</strong>
-              </div>
-              <div class="weight-slots">
-                <div class="weight-slot morning">
-                  <div class="period-icon">
-                    <img
-                      class="icon"
-                      src="./assets/icons/sun.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    />
-                  </div>
-                  <div class="weight-details">
-                    <p>
-                      <span data-i18n="screen.morning">晨重</span>
-                      <span>(07:32)</span>
-                    </p>
-                    <strong>62.1 <small>kg</small></strong
-                    ><span class="bmi-value">BMI 21.5</span>
-                  </div>
-                  <img
-                    class="icon edit-icon"
-                    src="./assets/icons/edit.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                <div class="weight-slot evening">
-                  <div class="period-icon">
-                    <img
-                      class="icon"
-                      src="./assets/icons/moon.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                    />
-                  </div>
-                  <div class="weight-details">
-                    <p>
-                      <span data-i18n="screen.evening">晚重</span>
-                      <span>(21:15)</span>
-                    </p>
-                    <strong>62.4 <small>kg</small></strong
-                    ><span class="bmi-value">BMI 21.6</span>
-                  </div>
-                  <img
-                    class="icon edit-icon"
-                    src="./assets/icons/edit-evening.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-              </div>
-              <div class="phone-metrics">
-                <div>
-                  <span data-i18n="screen.dayDelta">当天差额</span
-                  ><strong class="morning">+0.3 kg</strong>
-                </div>
-                <div>
-                  <span data-i18n="screen.overnightDelta">隔夜变化</span
-                  ><strong class="positive">−0.4 kg</strong>
-                </div>
-              </div>
-              <div class="phone-rhythm">
-                <p data-i18n="screen.rhythm">三点起伏</p>
-                <div class="mini-moments">
-                  <div class="mini-moment muted">
-                    <span data-i18n="screen.lastNight">昨晚</span
-                    ><strong>62.5</strong>
-                  </div>
-                  <span class="small-chevron"
-                    ><img
-                      class="icon"
-                      src="./assets/icons/chevron.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                  /></span>
-                  <div class="mini-moment morning">
-                    <span data-i18n="screen.thisMorning">今晨</span
-                    ><strong>62.1</strong>
-                  </div>
-                  <span class="small-chevron"
-                    ><img
-                      class="icon"
-                      src="./assets/icons/chevron.svg"
-                      alt=""
-                      width="20"
-                      height="20"
-                  /></span>
-                  <div class="mini-moment evening">
-                    <span data-i18n="screen.tonight">今晚</span
-                    ><strong>62.4</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-complete">
-                <img
-                  class="icon"
-                  src="./assets/icons/check-circle.svg"
-                  alt=""
-                  width="20"
-                  height="20"
-                /><span data-i18n="screen.complete"
-                  >今日记录已完成。日升日落，静观变化。</span
-                >
-              </div>
-              <div class="phone-tabs">
-                <div class="phone-tab selected">
-                  <img
-                    class="icon"
-                    src="./assets/icons/calendar-active.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.today">今天</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/trending.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.trends">趋势</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/history.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.history">历史</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/settings.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.settings">设置</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="app-screen" src="./assets/screens/today-zh-CN.webp" srcset="./assets/screens/today-zh-CN.webp 1x, ./assets/screens/today-zh-CN@2x.webp 2x, ./assets/screens/today-zh-CN@3x.webp 3x" data-screen="today" width="441" height="900" alt="朝夕体重的今日记录界面：晨重、晚重、当天差额和隔夜变化。" data-i18n-alt="screen.todayAlt" loading="lazy" decoding="async" />
         </div>
       </section>
       <section class="section section-tinted">
@@ -779,96 +293,7 @@
           </div>
           <div class="section-content backup-showcase">
             <figure class="phone-figure">
-              <div
-                class="phone backup-phone"
-                role="img"
-                aria-label="加密备份预览，显示记录数量、备份时间与原始 PNG 保存提示。"
-                data-i18n-aria-label="screen.backupAlt"
-              >
-                <div class="phone-ui" aria-hidden="true">
-                  <div class="phone-status">
-                    <span>09:41</span>
-                    <div class="status-icons">
-                      <img
-                        class="icon"
-                        src="./assets/icons/signal.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/wifi.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/battery.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      />
-                    </div>
-                  </div>
-                  <strong
-                    data-i18n="screen.backupTitle"
-                    class="backup-screen-title"
-                    >备份已生成</strong
-                  >
-                  <div class="backup-body">
-                    <div class="backup-summary">
-                      <div class="backup-summary-header">
-                        <div>
-                          <strong data-i18n="product.name">朝夕体重</strong>
-                          <p data-i18n="screen.backupFile">加密备份文件</p>
-                        </div>
-                        <span class="secure-badge"
-                          ><img
-                            class="icon"
-                            src="./assets/icons/lock.svg"
-                            alt=""
-                            width="20"
-                            height="20"
-                          /><span data-i18n="screen.encrypted">加密</span></span
-                        >
-                      </div>
-                      <div class="backup-art">
-                        <div class="backup-symbol">
-                          <img
-                            class="icon"
-                            src="./assets/icons/waveform.svg"
-                            alt=""
-                            width="20"
-                            height="20"
-                          /><i class="morning-dot"></i
-                          ><i class="evening-dot"></i>
-                        </div>
-                      </div>
-                      <div class="backup-info">
-                        <div>
-                          <p data-i18n="screen.recordCount">包含记录</p>
-                          <strong data-i18n="screen.records"
-                            >180 条体重记录</strong
-                          >
-                        </div>
-                        <div>
-                          <p data-i18n="screen.backupTime">备份时间</p>
-                          <strong>2026/09/04 21:30</strong>
-                        </div>
-                      </div>
-                    </div>
-                    <p data-i18n="screen.backupWarning" class="backup-warning">
-                      请务必将此 PNG
-                      图像原图保存或发送至安全的设备。请勿截图保存，不要对其进行文件压缩或格式转换，否则图像内潜藏的数据编码会被破坏。
-                    </p>
-                  </div>
-                  <div class="phone-bottom-action">
-                    <span data-i18n="screen.savePhoto" class="phone-button"
-                      >保存至系统相册</span
-                    >
-                  </div>
-                </div>
-              </div>
+              <img class="app-screen" src="./assets/screens/backup-zh-CN.webp" srcset="./assets/screens/backup-zh-CN.webp 1x, ./assets/screens/backup-zh-CN@2x.webp 2x, ./assets/screens/backup-zh-CN@3x.webp 3x" data-screen="backup" width="441" height="900" alt="加密备份预览，显示记录数量、备份时间与原始 PNG 保存提示。" data-i18n-alt="screen.backupAlt" loading="lazy" decoding="async" />
               <figcaption data-i18n="backup.createCaption">
                 创建 · 生成加密图片
               </figcaption>
@@ -881,84 +306,7 @@
               </p>
             </div>
             <figure class="phone-figure">
-              <div
-                class="phone restore-phone"
-                role="img"
-                aria-label="备份恢复成功界面，显示恢复的晨晚记录与身体设定。"
-                data-i18n-aria-label="screen.restoreAlt"
-              >
-                <div class="phone-ui" aria-hidden="true">
-                  <div class="phone-status">
-                    <span>09:41</span>
-                    <div class="status-icons">
-                      <img
-                        class="icon"
-                        src="./assets/icons/signal.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/wifi.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      /><img
-                        class="icon"
-                        src="./assets/icons/battery.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      />
-                    </div>
-                  </div>
-                  <div class="restore-body">
-                    <div class="success-icon">
-                      <img
-                        class="icon"
-                        src="./assets/icons/check-large.svg"
-                        alt=""
-                        width="20"
-                        height="20"
-                      />
-                    </div>
-                    <div class="restore-labels">
-                      <strong data-i18n="screen.restoreTitle"
-                        >备份恢复成功</strong
-                      >
-                      <p data-i18n="screen.restoreCopy">
-                        数据链整合完成，所有历史轴线已对齐。
-                      </p>
-                    </div>
-                    <div class="restore-summary">
-                      <p data-i18n="screen.restoreSummary">恢复摘要汇总</p>
-                      <div>
-                        <span data-i18n="screen.restoremorning">晨重记录数</span
-                        ><strong data-i18n="screen.restoremorningValue"
-                          >90 条</strong
-                        >
-                      </div>
-                      <div>
-                        <span data-i18n="screen.restoreevening">晚重记录数</span
-                        ><strong data-i18n="screen.restoreeveningValue"
-                          >90 条</strong
-                        >
-                      </div>
-                      <div>
-                        <span data-i18n="screen.restorebody">身体基本设定</span
-                        ><strong data-i18n="screen.restorebodyValue"
-                          >身高 170cm / 目标体重 58.0kg</strong
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="phone-bottom-action">
-                    <span data-i18n="screen.goHome" class="phone-button"
-                      >进入主页</span
-                    >
-                  </div>
-                </div>
-              </div>
+              <img class="app-screen" src="./assets/screens/restore-zh-CN.webp" srcset="./assets/screens/restore-zh-CN.webp 1x, ./assets/screens/restore-zh-CN@2x.webp 2x, ./assets/screens/restore-zh-CN@3x.webp 3x" data-screen="restore" width="441" height="900" alt="备份恢复成功界面，显示恢复的晨晚记录与身体设定。" data-i18n-alt="screen.restoreAlt" loading="lazy" decoding="async" />
               <figcaption data-i18n="backup.restoreCaption">
                 恢复 · 零云端校验导入
               </figcaption>
@@ -968,222 +316,7 @@
       </section>
       <section class="section">
         <div class="container split-layout trends-layout">
-          <div
-            class="phone trends-phone"
-            role="img"
-            aria-label="每周趋势界面，包含晨晚双折线、周统计与记录完成率。"
-            data-i18n-aria-label="screen.trendsAlt"
-          >
-            <div class="phone-ui" aria-hidden="true">
-              <div class="phone-status">
-                <span>07:32</span>
-                <div class="status-icons">
-                  <img
-                    class="icon"
-                    src="./assets/icons/signal.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/wifi.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><img
-                    class="icon"
-                    src="./assets/icons/battery.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </div>
-              </div>
-              <div class="trend-periods">
-                <span data-i18n="screen.thisWeek" class="selected">本周</span
-                ><span data-i18n="screen.thisMonth">本月</span>
-              </div>
-              <div class="trend-chart-card">
-                <div class="chart-caption">
-                  <span data-i18n="screen.chartTitle">朝夕体重双曲线</span>
-                  <div class="chart-legend">
-                    <span class="morning"
-                      ><span data-i18n="screen.morning">晨重</span></span
-                    ><span class="evening"
-                      ><span data-i18n="screen.evening">晚重</span></span
-                    >
-                  </div>
-                </div>
-                <div class="trend-chart">
-                  <i class="chart-grid"></i><i class="chart-grid"></i
-                  ><i class="chart-grid"></i><i class="chart-grid"></i>
-                  <div class="chart-series morning">
-                    <i class="chart-dot" style="--x: 5%; --y: 49%"></i
-                    ><i class="chart-dot" style="--x: 18%; --y: 53%"></i
-                    ><i class="chart-dot" style="--x: 32%; --y: 56%"></i
-                    ><i class="chart-dot" style="--x: 46%; --y: 63%"></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 5%;
-                        --y: 49%;
-                        --w: 13%;
-                        --h: 4%;
-                        --direction: 1;
-                      "
-                    ></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 18%;
-                        --y: 53%;
-                        --w: 14%;
-                        --h: 3%;
-                        --direction: 1;
-                      "
-                    ></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 32%;
-                        --y: 56%;
-                        --w: 14%;
-                        --h: 7%;
-                        --direction: 1;
-                      "
-                    ></i>
-                  </div>
-                  <div class="chart-series evening">
-                    <i class="chart-dot" style="--x: 5%; --y: 36%"></i
-                    ><i class="chart-dot" style="--x: 18%; --y: 43%"></i
-                    ><i class="chart-dot" style="--x: 32%; --y: 46%"></i
-                    ><i class="chart-dot" style="--x: 46%; --y: 53%"></i
-                    ><i class="chart-dot" style="--x: 60%; --y: 49%"></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 5%;
-                        --y: 36%;
-                        --w: 13%;
-                        --h: 7%;
-                        --direction: 1;
-                      "
-                    ></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 18%;
-                        --y: 43%;
-                        --w: 14%;
-                        --h: 3%;
-                        --direction: 1;
-                      "
-                    ></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 32%;
-                        --y: 46%;
-                        --w: 14%;
-                        --h: 7%;
-                        --direction: 1;
-                      "
-                    ></i
-                    ><i
-                      class="chart-segment"
-                      style="
-                        --x: 46%;
-                        --y: 49%;
-                        --w: 14%;
-                        --h: 4%;
-                        --direction: -1;
-                      "
-                    ></i>
-                  </div>
-                </div>
-              </div>
-              <div class="weekly-summary">
-                <strong data-i18n="screen.weekSummary">本周总结</strong>
-                <div class="weekly-stats">
-                  <div>
-                    <span data-i18n="screen.statup">体重上涨</span
-                    ><strong data-i18n="screen.statupValue" class="negative"
-                      >2 天</strong
-                    >
-                  </div>
-                  <div>
-                    <span data-i18n="screen.statdown">体重下降</span
-                    ><strong data-i18n="screen.statdownValue" class="positive"
-                      >4 天</strong
-                    >
-                  </div>
-                  <div>
-                    <span data-i18n="screen.stataverage">晨重平均</span
-                    ><strong data-i18n="screen.stataverageValue"
-                      >62.2 kg</strong
-                    >
-                  </div>
-                  <div>
-                    <span data-i18n="screen.statcomparison">对比上周</span
-                    ><strong
-                      data-i18n="screen.statcomparisonValue"
-                      class="positive"
-                      >−0.2 kg</strong
-                    >
-                  </div>
-                  <div>
-                    <span data-i18n="screen.statrange">晨重波动</span
-                    ><strong data-i18n="screen.statrangeValue">±0.3 kg</strong>
-                  </div>
-                  <div>
-                    <span data-i18n="screen.statrate">记录完成率</span
-                    ><strong data-i18n="screen.statrateValue">6/7 (86%)</strong>
-                  </div>
-                </div>
-                <p data-i18n="screen.trendInsight" class="trend-insight">
-                  本周晨重保持平稳，晚间波动略大。建议继续保持规律作息与晚间睡前平稳记录。
-                </p>
-              </div>
-              <div class="phone-tabs">
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/calendar.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.today">今天</span>
-                </div>
-                <div class="phone-tab selected">
-                  <img
-                    class="icon"
-                    src="./assets/icons/trending-active.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.trends">趋势</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/history.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.history">历史</span>
-                </div>
-                <div class="phone-tab">
-                  <img
-                    class="icon"
-                    src="./assets/icons/settings.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                  /><span data-i18n="screen.settings">设置</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="app-screen" src="./assets/screens/trends-zh-CN.webp" srcset="./assets/screens/trends-zh-CN.webp 1x, ./assets/screens/trends-zh-CN@2x.webp 2x, ./assets/screens/trends-zh-CN@3x.webp 3x" data-screen="trends" width="441" height="900" alt="每周趋势界面，包含晨晚双折线、周统计与记录完成率。" data-i18n-alt="screen.trendsAlt" loading="lazy" decoding="async" />
           <div class="section-copy">
             <div class="section-heading">
               <p class="eyebrow" lang="en">06 · ON-DEVICE ANALYSIS</p>
@@ -1329,7 +462,7 @@
         <div class="container">
           <img
             class="closing-icon"
-            src="./assets/images/app-icon.svg?v=4"
+            src="./assets/images/app-icon.svg?v=5"
             alt=""
             width="64"
             height="64"

@@ -22,12 +22,12 @@
 ## 本目录内容
 
 - `index.html`：产品介绍页与法律文本弹窗结构
-- `styles.css`：对应 Figma 节点 `32:1050` 的响应式页面与 CSS 手机界面
+- `styles.css`：采用新版晨昏配色的响应式页面，对应 Figma `88:8`、`108:3184`、`108:8348`
 - `appdock-shared.css`：保留的 AppDock 页脚和法律弹窗样式
 - `../assets/language-switcher.css`：与 AppDock 首页共用的 Figma 语言切换样式
 - `app.js`：中日英文案、语言切换与法律弹窗交互
 - 法律文本：与 App 对齐的中／日／英隐私政策和使用条款
-- `assets/`：Figma 原始 SVG 图标与本地字体；页面不再引用旧版位图素材
+- `assets/`：最新 App 图标、Figma 晨昏 SVG、三语无损 WebP 界面展示和本地字体；来源见 `assets/screens/README.md`
 
 ## 多语言与法律文本
 

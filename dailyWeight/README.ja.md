@@ -22,12 +22,12 @@
 ## このディレクトリの内容
 
 - `index.html`：製品紹介ページと法的文書を表示するモーダルの構造
-- `styles.css`：Figmaノード `32:1050` に対応するレスポンシブ表示とCSSによるアプリ画面
+- `styles.css`：最新の朝・夜の配色に対応するレスポンシブ表示（Figma `88:8`、`108:3184`、`108:8348`）
 - `appdock-shared.css`：既存のAppDockフッターと法的文書モーダルのスタイル
 - `../assets/language-switcher.css`：AppDockトップページと共通のFigma言語切り替えスタイル
 - `app.js`：中国語・日本語・英語の文案、言語切り替え、法的文書モーダルの制御
 - `legal-documents.js`：アプリ内と同じ3言語のプライバシーポリシーと利用規約
-- `assets/`：Figmaから書き出したSVGアイコンとローカル配信のフォント。旧画像素材はページでは使用しません
+- `assets/`：最新のアプリアイコン、Figmaの朝夕SVG、3言語の可逆圧縮WebP画面、ローカルフォント。出典は `assets/screens/README.md` を参照
 
 ## 多言語と法的文書
 

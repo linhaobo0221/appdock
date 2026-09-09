@@ -112,8 +112,8 @@
         comingSoon: "即将公开",
       },
       hero: {
-        tag: "记录很少，看到的变化更多。",
-        title: "每天两个数字，看懂一天、一夜和长期趋势。",
+        tag: "静观晨昏变化，记下真实的每一天。",
+        title: "一天两次，\n把变化留给时间。",
         intro:
           "只记录晨重和晚重，无需注册账号。核心数据完全保存在本机，换设备时用一张加密图片即可完成迁移。",
       },
@@ -335,8 +335,8 @@
         comingSoon: "近日公開",
       },
       hero: {
-        tag: "少ない記録で、変化が見えてくる。",
-        title: "1日2つの数字で、日中・夜間の変化と長期の傾向がわかる。",
+        tag: "朝と夜、自分のリズムを知る。",
+        title: "1日2回。\n変化は、時間とともに。",
         intro:
           "記録するのは朝と夜の体重だけ。アカウント登録は不要です。データはすべて端末内に保存され、機種変更時も1枚の暗号化画像で引き継げます。",
       },
@@ -561,9 +561,8 @@
         comingSoon: "Coming soon",
       },
       hero: {
-        tag: "Less to log. More to see.",
-        title:
-          "Two numbers a day. See daytime and overnight changes, plus long‑term trends.",
+        tag: "A little moment, morning and night.",
+        title: "Twice a day.\nLet time tell the story.",
         intro:
           "Just log your morning and evening weight. No account needed. All your data stays on your device, and one encrypted image is all you need to move it to a new one.",
       },
@@ -883,6 +882,14 @@
     document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
       const value = resolveMessage(nextLocale, element.dataset.i18nAriaLabel);
       if (typeof value === "string") element.setAttribute("aria-label", value);
+    });
+
+    document.querySelectorAll("[data-screen]").forEach((image) => {
+      const source = `./assets/screens/${image.dataset.screen}-${nextLocale}`;
+      // Change the complete candidate set together so Retina screens also follow the locale.
+      image.srcset = `${source}.webp 1x, ${source}@2x.webp 2x, ${source}@3x.webp 3x`;
+      image.src = `${source}.webp`;
+      image.height = image.dataset.screen === "today" && nextLocale === "en" ? 912 : 900;
     });
 
     document.querySelectorAll("button[data-locale]").forEach((button) => {
