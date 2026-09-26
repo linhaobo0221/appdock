@@ -108,8 +108,13 @@
         trendInsight:
           "本周晨重保持平稳，晚间波动略大。建议继续保持规律作息与晚间睡前平稳记录。",
       },
-      common: {
-        comingSoon: "即将公开",
+      download: {
+        saveQr: "保存二维码",
+        storeLinkLabel: "前往 App Store 下载",
+        qrLinkLabel: "查看 App Store 下载二维码",
+        availability: "现已上架 · 适用于 iPhone",
+        qrAlt: "朝夕体重的 App Store 下载二维码",
+        qrCaption: "用 iPhone 扫码下载",
       },
       hero: {
         tag: "静观晨昏变化，记下真实的每一天。",
@@ -331,8 +336,13 @@
         trendInsight:
           "今週は朝の体重が安定しており、夜はやや変動が大きくなっています。規則正しい生活を続け、夜は就寝前に同じ条件で記録しましょう。",
       },
-      common: {
-        comingSoon: "近日公開",
+      download: {
+        saveQr: "QRコードを保存",
+        storeLinkLabel: "App Storeでダウンロード",
+        qrLinkLabel: "App Storeダウンロード用QRコードを表示",
+        availability: "配信中 · iPhoneに対応",
+        qrAlt: "朝晩体重のApp Storeダウンロード用QRコード",
+        qrCaption: "iPhoneでスキャンしてダウンロード",
       },
       hero: {
         tag: "朝と夜、自分のリズムを知る。",
@@ -557,8 +567,13 @@
         trendInsight:
           "Morning weight was steady this week, with slightly more variation in the evening. Keep a consistent daily routine and log your evening weight under the same conditions before bed.",
       },
-      common: {
-        comingSoon: "Coming soon",
+      download: {
+        saveQr: "Save QR code",
+        storeLinkLabel: "Download on the App Store",
+        qrLinkLabel: "View the App Store download QR code",
+        availability: "Available now · For iPhone",
+        qrAlt: "QR code to download Daily Weight on the App Store",
+        qrCaption: "Scan with your iPhone to download",
       },
       hero: {
         tag: "A little moment, morning and night.",

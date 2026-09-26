@@ -89,12 +89,15 @@
             English
           </button>
         </div>
-        <span
-          data-i18n="common.comingSoon"
-          class="nav-status"
-          aria-disabled="true"
-          >即将公开</span
+        <a
+          class="app-store-button nav-download"
+          href="#download"
+          aria-label="查看 App Store 下载二维码"
+          data-i18n-aria-label="download.qrLinkLabel"
         >
+          <img src="./assets/icons/app-store.svg" alt="" width="28" height="28" />
+          <span lang="en">App Store</span>
+        </a>
       </div>
     </header>
     <main id="main">
@@ -111,7 +114,19 @@
             <p data-i18n="hero.intro" class="hero-description">
               只记录晨重和晚重，无需注册账号。核心数据完全保存在本机，换设备时用一张加密图片即可完成迁移。
             </p>
-            <a class="hero-link" href="#features"><span data-i18n="nav.features">核心功能</span><span aria-hidden="true">↓</span></a>
+            <div class="hero-actions">
+              <a
+                class="app-store-button"
+                href="#download"
+                aria-label="查看 App Store 下载二维码"
+                data-i18n-aria-label="download.qrLinkLabel"
+              >
+                <img src="./assets/icons/app-store.svg" alt="" width="28" height="28" />
+                <span lang="en">App Store</span>
+              </a>
+              <a class="hero-link" href="#features"><span data-i18n="nav.features">核心功能</span><span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="download-availability" data-i18n="download.availability">现已上架 · 适用于 iPhone</p>
             <ul class="trust-signals">
               <li>
                 <img
@@ -471,6 +486,49 @@
           <p data-i18n="closing.intro">
             朝夕有序，静观变化。你的身体数据始终牢牢掌握在你自己手中。
           </p>
+          <div class="download-card" id="download" tabindex="-1" role="group" aria-labelledby="download-title">
+            <div class="download-card-header">
+              <div>
+                <h3 id="download-title" lang="en">For iOS</h3>
+                <p class="download-requirements" lang="en">iOS 16.4+</p>
+              </div>
+              <a
+                class="app-store-badge-link"
+                href="https://apps.apple.com/app/id6807597885"
+                aria-label="前往 App Store 下载"
+                data-i18n-aria-label="download.storeLinkLabel"
+              >
+                <img
+                  class="app-store-badge"
+                  src="./assets/images/app-store-badge.svg"
+                  width="120"
+                  height="40"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+            <figure class="download-code">
+              <img
+                class="download-qr"
+                src="./assets/images/app-store-qr.png?v=global"
+                width="222"
+                height="222"
+                alt="朝夕体重的 App Store 下载二维码"
+                data-i18n-alt="download.qrAlt"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="download-instruction" data-i18n="download.qrCaption">用 iPhone 扫码下载</figcaption>
+            </figure>
+            <a
+              class="download-save"
+              href="./assets/images/app-store-qr.png?v=global"
+              download="daily-weight-app-store-qr.png"
+              data-i18n="download.saveQr"
+            >保存二维码</a>
+          </div>
         </div>
       </section>
     </main>

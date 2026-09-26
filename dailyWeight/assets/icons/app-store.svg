@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="app-store-blue" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16D8FA"/>
+      <stop offset="1" stop-color="#2453EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#app-store-blue)"/>
+  <g stroke="#FFF" stroke-width="2.8" stroke-linecap="round">
+    <path d="M18.1 7.1 10.3 20.6M13.3 7.1 15.3 10.6M6.9 21h12.5M8.8 24.1 7.2 26.9"/>
+    <path d="m17.8 14.9 6.9 12M21.7 21H26"/>
+  </g>
+</svg>
